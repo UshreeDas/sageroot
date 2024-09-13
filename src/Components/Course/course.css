@@ -1,0 +1,48 @@
+.search-university{
+    display: flex;
+    justify-content:center ;
+    gap: 50px;
+ }
+ .hello{
+     padding-left: 25px;
+     padding-right: 25px;
+     padding-top: 200px;
+     border-radius: 10px;
+ }
+ .index{
+     padding-left: 10px;
+     padding-right: 10px;
+     padding-top: 20px;
+     padding-bottom: 20px;
+     gap: 50px;
+     border-radius: 10px;
+ }
+ .more{
+     display: flex;
+     justify-content: center;
+     gap: 30px;
+     padding top: 300px;
+ }
+ .explore{
+     background-color: rgb(5, 5, 60);
+     color: aliceblue;
+     padding: 10px 20px;
+     border-radius: 10px;
+     margin-left: 700px;
+ }
+ .catagory1{
+    background-color:rgb(198, 202, 205);
+    display: flex;
+    justify-content: center;
+}
+.catagory2{
+background-color: rgb(198, 202, 205);
+display: flex;
+    justify-content: center;
+}
+.flew{
+    padding-top: 80px;
+    padding-bottom: 30px;
+    border-color: brown;
+    border-radius: 0.1px;
+}
