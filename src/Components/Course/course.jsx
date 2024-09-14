@@ -2,7 +2,6 @@ import React from "react";
 import "./course.css";
 function course () {
     return (
-        
         <div className="course">
 <div class="universities">
 <h1>Discover Top <span className="color">Universities</span></h1>
@@ -41,6 +40,7 @@ function course () {
     </section>
 </div>
 </div>
+        </div>
     )
 }
 export default course;
