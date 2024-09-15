@@ -1,0 +1,53 @@
+img {
+    width: 153px;
+    height: auto;
+    top: 26px;
+    left: 68px;
+}
+
+.header {
+
+    padding: 2rem 2rem 2rem 1rem;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.information {
+    padding-right: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #21386D;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 4rem;
+}
+
+.btn {
+    color: #21386D;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+.btn-contact {
+    background-color: #981B1E;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 10px;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}

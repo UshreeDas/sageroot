@@ -1,12 +1,5 @@
-.header-part{
-  background-color: white;
-  display: flex;
- gap: 30px;
- box-shadow: 5 5 aliceblue;
-}
-.color{
-  color: brown;
-}
-h1{
-  color: rgb(5, 5, 63);
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
