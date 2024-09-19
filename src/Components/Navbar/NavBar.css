@@ -6,13 +6,11 @@ img {
 }
 
 .header {
-
-    padding: 2rem 2rem 2rem 1rem;
-    height: 80px;
+    padding: 2rem 2rem 0 1rem;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
     width: 100%;
     z-index: 100;
 }

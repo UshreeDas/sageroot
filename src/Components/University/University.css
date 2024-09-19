@@ -1,0 +1,22 @@
+.main-heading{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-left: 5rem;
+}
+.heading {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5rem;
+    color: #21386D;
+    display: flex;
+    align-items: center;
+}
+
+.heading span {
+    color: #981B1E;
+    margin-left: 5px;
+}
+p{
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    padding-top: 3rem;
+}

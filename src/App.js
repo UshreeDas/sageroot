@@ -2,6 +2,7 @@ import React from "react";
 
 import NavBar from "./Components/Navbar/NavBar";
 import Main from "./Components/MainPage/Main";
+import University from "./Components/University/University";
 
 import './App.css';
 
@@ -10,6 +11,7 @@ function App() {
         <div className="app-container">
             <NavBar/>
             <Main/>
+            <University/>
         </div>
 
 
