@@ -6,7 +6,6 @@ img {
 }
 
 .header {
-    padding: 0 3rem;
     height: auto;
     display: flex;
     justify-content: space-between;
