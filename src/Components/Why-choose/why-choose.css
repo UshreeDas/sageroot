@@ -1,0 +1,55 @@
+h1{
+    color: #21386D;
+}
+.color{
+    color: #981B1E;
+}
+.reasons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding-bottom: 10px;
+    
+}
+.img-one{
+    height: 60%;
+    width: 60%;
+    padding-left: 25px ;
+
+}
+.img-two{
+    height: 50%;
+    width: 50%;
+    padding-left:40px ;
+    padding-bottom: 13px ;
+}
+.img-three{
+    height: 70%;
+    width: 70%;
+    padding-left: 15px ;
+    padding-bottom: 18px;
+}
+.img-four{
+    height: 70%;
+    width: 70%;
+    padding-left: 10px;
+    padding-bottom:10px ;
+}
+.img-five{
+    height: 85%;
+    width: 85%;
+    padding-left: 8px;
+    padding-bottom: 20px;
+}
+.tag{
+    text-align: center;
+}
+.group{
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
