@@ -10,7 +10,7 @@ function University() {
                 <h1>Discover Top <span>Universities</span></h1>
                 <LibraryIcon />
             </div>
-            <p>Explore our detailed breakdowns of the study abroad destinations around the world!</p>
+            <p className="sub-heading">Explore our detailed breakdowns of the study abroad destinations around the world!</p>
             <UniversityList />
         </div>
     );

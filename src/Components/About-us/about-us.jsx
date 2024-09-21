@@ -8,8 +8,8 @@ function About () {
     return (
         
         <div className="about">
-        
-            <h1 className="heading">Sageroot<span className="color"> Give Wings to Your Dreams</span></h1>
+        <div className="heading">
+            <h1 >Sageroot<span> Give Wings to Your Dreams</span></h1></div>
         <p className="para" >
               We will guide and support you by offering the entire spectrum of services designed to 
               make the process of studying abroad smoother.We believe that education should be accessible to everyone. Our

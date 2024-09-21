@@ -1,6 +1,9 @@
 import React, {useState} from "react";
 import "./MainPage.css";
 import University from "../University/University";
+import Category from "../Category/category";
+import Why from "../Why-choose/why-choose";
+import About from "../About-us/about-us";
 
 function Main() {
     const [fullName, setFullName] = useState("Full Name *");
@@ -71,6 +74,9 @@ function Main() {
                 </div>
             </div>
             <University/>
+<Category/>
+<Why/>
+<About/>
         </div>
     )
 }

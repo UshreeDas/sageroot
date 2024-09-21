@@ -1,14 +1,11 @@
-.heading{
-    margin-left: 80px;
-    margin-left: 160px;
-   
-}
+
 .para{
     margin-left: 160px;
     font-size: 16px;
     margin-right: 160px;
     font-family: "Raleway", sans-serif;
     color: #21386D;
+    padding-top: 3rem;
 }
 .list{
     margin-left: 190px; 

@@ -1,6 +1,4 @@
-h1{
-    color: #21386D;
-}
+
 .color{
     color: #981B1E;
 }
@@ -10,7 +8,9 @@ h1{
     justify-content: center;
     align-items: center;
     gap: 80px;
-    padding-bottom: 10px;
+  
+    padding-top: 3rem;
+    padding-bottom: 3rem ;
     
 }
 .img-one{
