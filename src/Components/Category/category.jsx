@@ -13,7 +13,8 @@ function Category () {
     return(
 
 <div className="catagory">
-<h1 className="heading">Browse programs by <span className="color">Category</span></h1>
+    <div className="heading">
+<h1>Browse programs by <span>Category</span></h1></div>
 <br/>
 <section className="catagory-name">
 <button className="view" >View all</button>

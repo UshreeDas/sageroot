@@ -54,7 +54,7 @@ const UniversityNames = [
 function UniversityList() {
     return (
         <div className="university-list-main">
-            {UniversityNames.slice(0, 3).map((university) => (
+            {UniversityNames.map((university) => (
                 <CardComponent
                     key={university.id}
                     imageUrl={university.image}

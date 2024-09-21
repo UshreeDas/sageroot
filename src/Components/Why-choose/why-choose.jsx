@@ -10,7 +10,8 @@ function Why () {
     return(
 
 <div className="why-choose">
-<h1 className="heading">Why Choose <span className="color">Sageroots International?</span></h1>
+    <div className="heading">
+<h1 >Why Choose <span>Sageroots International?</span></h1></div>
 
 <div className="reasons">
 
