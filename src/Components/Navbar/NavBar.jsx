@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import "./NavBar.css";
 import logo from "./logo.png";
 
@@ -7,8 +8,8 @@ function NavBar() {
         <nav className="header">
             <img src={logo} alt="Logo" />
             <div className="information">
-                <a href="/" className="btn">About Us</a>
-                <a href="/" className="btn">Programs</a>
+                <Link to="/" className="btn">About Us</Link>
+                <Link to="/university" className="btn">Programs</Link>
                 <a href="/" className="btn-contact">Contact Us - 00000000000</a>
             </div>
         </nav>
