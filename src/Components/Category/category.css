@@ -1,0 +1,171 @@
+.catagory-name{
+    background-color:#D9D9D9 ;
+    padding-bottom: 80px;
+}
+.heading{
+    padding-top: 60px ;
+    padding-bottom: 60px ;
+    font-family: "Raleway", sans-serif;
+}
+.view{
+    background-color: #FAE4E5 ;
+    color:#981B1E ;
+    border-radius: 13px;
+    border-width: 1px;
+    border-color: #b42c2e;
+    padding-left: 25px ;
+    padding-right: 25px ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 80%;
+    box-shadow: 0 3px rgb(176, 173, 173);
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.catagory-portion-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.catagory-portion-two
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.business{
+    height: 80% ;
+    width: 80% ;
+padding-top: 24px  ;
+padding-bottom: 29px ;
+padding-left: ;
+padding-right: ;
+}
+.health{
+    height:80% ;
+    width:80% ;
+    padding-top: 16px;
+    padding-bottom: 22px;
+    padding-left: ;
+    padding-right: ;
+}
+.engineering
+{ height: 75%;
+    width:75% ;
+    padding-top: 13px;
+    padding-bottom:21px ;
+    padding-left: ;
+    padding-right: ;
+}
+.management{
+    height: 70%;
+    width: 70%;
+    padding-top: ;
+    padding-bottom: ;
+    padding-left: ;
+    padding-right: ;
+}
+.economic{
+    height: 60%;
+    width:60% ;
+    padding-top: ;
+    padding-bottom: 7px ;
+    padding-left: ;
+    padding-right: ;
+}
+.literature{
+    height:80% ;
+    width: 80%;
+    padding-top: 2px ;
+    padding-bottom: 2px ;
+    padding-left: ;
+    padding-right: ;
+}
+.philosopy{
+    height:80% ;
+    width:80% ;
+    padding-top:17px ;
+    padding-bottom: 12px;
+    
+}
+.humanities{
+    height: 80%;
+    width:80% ;
+    padding-top:22px ;
+    padding-bottom: 17px;
+    padding-left: ;
+    padding-right: ;
+}
+.one{
+border-radius: 0%;
+border-width: 1px;
+border-color: #b42c2e;
+padding-top: 20px;
+padding-bottom: 20px;
+padding-left: 80px;
+    padding-right: 80px ;
+}
+.two{
+    border-radius: 0%;
+    border-width: 1px;
+    border-color: #b42c2e;
+    padding-top: 20px;
+padding-bottom: 20px;
+padding-left: 60px;
+    padding-right: 60px ;
+}
+
+.three{
+    border-radius: 0%;
+    border-width: 1px;
+    border-color: #b42c2e;
+    padding-top: 20px;
+padding-bottom: 20px;
+padding-left: 68px;
+    padding-right: 68px ;
+}
+.four{
+    border-radius: 0%;
+    border-width: 1px;
+    border-color: #b42c2e;
+    padding-top: 20px;
+padding-bottom: 20px;
+padding-left: 67px;
+    padding-right: 67px ;
+}
+.five{
+    border-radius: 0%;
+    border-width: 1px;
+    border-color: #b42c2e;
+    padding-top: 20px;
+padding-bottom: 20px;
+padding-left: 43px;
+    padding-right: 43px ;
+}
+.six{
+    border-radius: 0%;
+    border-width: 1px;
+    border-color: #b42c2e;
+    padding-top: 20px;
+padding-bottom: 20px;
+padding-left: 71px;
+    padding-right: 71px ;
+}
+.seven{
+    border-radius: 0%;
+border-width: 1px;
+border-color: #b42c2e;
+padding-top: 20px;
+padding-bottom: 20px;
+padding-left: 78px;
+    padding-right: 77px ;
+}
+.eight{
+    border-radius: 0%;
+border-width: 1px;
+border-color: #b42c2e;
+padding-top: 20px;
+padding-bottom: 20px;
+padding-left: 64px;
+    padding-right: 63px ;
+}
