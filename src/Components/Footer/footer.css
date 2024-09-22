@@ -1,0 +1,49 @@
+.footer{
+    background-color: #F7F8F9;
+    width: 100;
+    box-shadow: 0 0 8px  rgb(96, 96, 96);
+    padding-top: 40px;
+    margin-top: 80px;
+}
+
+.first-footer{
+    display: flex;
+    flex-direction: row;
+}
+.up-arrow{
+    height:40% ;
+    width: 40%;
+    transition: all 1s ease;
+}
+.up-arrow:active{
+    transform: scale(0.1);
+    box-shadow: 10px white;
+}
+.up-arrow:hover{
+    transform: scale(0.8);
+}
+.copy{
+    text-align: center;
+    color: #21386D;
+    font-family: "Sora", sans-serif;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.policy{
+    text-decoration: underline;
+padding-left: 700px;
+padding-top: 30px;
+padding-right: 40px;
+}
+.top{
+    padding-right: 80px;
+    font-size: smaller;
+}
+.plan{
+    font-family: "Sora", sans-serif;
+    padding-top: 50px;
+    font-size: smaller;
+}
+.logo-footer{
+    padding-bottom: 20px;
+}
