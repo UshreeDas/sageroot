@@ -35,6 +35,9 @@ padding-left: 700px;
 padding-top: 30px;
 padding-right: 40px;
 }
+.policy:hover{
+    color: #da1449;
+}
 .top{
     padding-right: 80px;
     font-size: smaller;
