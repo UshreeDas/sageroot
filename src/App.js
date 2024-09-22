@@ -3,10 +3,7 @@ import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import NavBar from "./Components/Navbar/NavBar";
 import Main from "./Components/MainPage/Main";
 import University from "./Components/University/University";
-import Category from "./Components/Category/category";
-import Why from "./Components/Why-choose/why-choose";
-import About from "./Components/About-us/about-us";
-
+import Footer from "./Components/Footer/footer";
 import './App.css';
 
 function App() {
@@ -18,6 +15,7 @@ function App() {
                     <Route path="/" element={<Main/>}/>
                     <Route path="/university" element={<University/>}/>
                 </Routes>
+                <Footer />
             </div>
         </Router>
       

@@ -12,7 +12,7 @@ import humanities from "./man.svg";
 function Category () {
     return(
 
-<div className="catagory">
+<div className="catagory">                                                                                                                      
     <div className="heading">
 <h1>Browse programs by <span>Category</span></h1></div>
 <br/>
