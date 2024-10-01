@@ -1,0 +1,90 @@
+.form-container {
+   
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  input[type="text"]:focus,
+  input[type="tel"]:focus,
+  input[type="email"]:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #981B1E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition:  0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #bb3133;
+  }
+  .submit-button:active {
+    transform: 0.8 ;
+  }
+  
+  .success-message {
+    margin-top: 15px;
+    color: #21386D;
+    font-weight: bold;
+    text-align: center;
+  }
+  .form-c{
+    margin-left: 140px;
+    font-size: 16px;
+    margin-right: 140px;
+    font-family: "Raleway", sans-serif;
+  
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: row;
+  }
+  .get-touch{
+    padding-top: 12rem;
+    color: #21386D;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+  }
+  .free{
+    font-size: 50px;
+    padding-bottom: 30px;
+  }
