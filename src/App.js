@@ -16,11 +16,12 @@ function App() {
                     <Route path="/" element={<Main/>}/>
                     <Route path="/university" element={<University/>}/>
                 </Routes>
+            </div>
+        </Router>
                 <Footer />
                 <UserForm/>
             </div>
         </Router>
-      
 
 
     );
