@@ -3,3 +3,7 @@
     flex-direction: column;
     gap: 10px;
 }
+.heading span {
+    color: #981B1E;
+    margin-left: 5px;
+}
