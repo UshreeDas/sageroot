@@ -15,15 +15,11 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Main/>}/>
                     <Route path="/university" element={<University/>}/>
+                    <Route path="/contact" element={<UserForm/>}/>
                 </Routes>
+                <Footer/>
             </div>
         </Router>
-                <Footer />
-                <UserForm/>
-            </div>
-        </Router>
-
-
     );
 }
 

@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 3fr 2fr;
     grid-template-rows: 1fr 1fr;
-    background-image: url("image 12.svg");
+    background-image: url("../../../public/image 12.svg");
     background-size: 100% auto;
     background-repeat: no-repeat;
     height: 100vh;
