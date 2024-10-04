@@ -1,13 +1,13 @@
 import React from "react";
 import "./category.css";
-import business from "./Business.svg";
-import health from "./Medical Equipment.svg";
-import engineering from "./png-transparent-computer-icons-settings-white-text-desktop-wallpaper-thumbnail-removebg-preview 1.svg";
-import management from "./Management.svg";
-import economic from "./Graph.svg";
-import literature from "./pngtree-book-line-black-icon.-png-image_3746347-removebg-preview 1.svg";
-import philosopy from "./image 14.svg";
-import humanities from "./man.svg";
+import business from "../../../public/Business.svg";
+import health from "../../../public/Medical Equipment.svg";
+import engineering from "../../../public/png-transparent-computer-icons-settings-white-text-desktop-wallpaper-thumbnail-removebg-preview 1.svg";
+import management from "../../../public/Management.svg";
+import economic from "../../../public/Graph.svg";
+import literature from "../../../public/pngtree-book-line-black-icon.-png-image_3746347-removebg-preview 1.svg";
+import philosopy from "../../../public/image 14.svg";
+import humanities from "../../../public/man.svg";
 
 function Category () {
     return(
