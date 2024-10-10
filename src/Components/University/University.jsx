@@ -1,5 +1,4 @@
 import React from "react";
-import { ReactComponent as LibraryIcon } from './library.svg'; // Adjust the path if necessary
 import './University.css';
 import UniversityList from "./UniversityList";
 
@@ -8,10 +7,11 @@ function University() {
         <div className="main-heading">
             <div className="heading">
                 <h1>Discover Top <span>Universities</span></h1>
-                <LibraryIcon />
+                <img src="/library.svg" alt="library"/>
             </div>
-            <p className="sub-heading">Explore our detailed breakdowns of the study abroad destinations around the world!</p>
-            <UniversityList />
+            <p className="sub-heading">Explore our detailed breakdowns of the study abroad destinations around the
+                world!</p>
+            <UniversityList/>
         </div>
     );
 }
