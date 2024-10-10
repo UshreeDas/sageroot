@@ -7,8 +7,7 @@ import About from "../About-us/about-us";
 function Main() {
     return (
         <div>
-            <div className="Main">
-            </div>
+            <div className="Main"></div>
             <University/>
             <Why/>
             <About/>

@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
-import './form.css'; // Import the CSS file
+import './formContact.css'; // Import the CSS file
 import Swal from 'sweetalert2'
 import emailjs from 'emailjs-com';
 
-const UserForm = () => {
+const formContact = () => {
     // State for form data
     const [formData, setFormData] = useState({
         name: '',
@@ -126,4 +126,4 @@ const UserForm = () => {
     );
 };
 
-export default UserForm;
+export default formContact;
