@@ -1,67 +1,83 @@
 import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./testimonial.css";
 
 
 function Testimonial() {
+  
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,           
+    autoplaySpeed: 3000,
+      };
     return (
-        <div className="testimonial">
+        <div className="testimonial-feedback">
 
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div className="carousel-inner">
-    <div class="carousel-item active">
-    <div class="card" >
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Bridal_pink_-_morwell_rose_garden.jpg/640px-Bridal_pink_-_morwell_rose_garden.jpg" class="card-img-top" alt="..."/>
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
+<div className="taxt">
+<p className="client-feedback">
+Hear From Our Happy Clients!
+</p>
 </div>
-    </div>
-    <div class="carousel-item">
-    <div class="card" >
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Bridal_pink_-_morwell_rose_garden.jpg/640px-Bridal_pink_-_morwell_rose_garden.jpg" class="card-img-top" alt="..."/>
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-    </div>
-    <div class="carousel-item">
-    <div class="card" >
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Bridal_pink_-_morwell_rose_garden.jpg/640px-Bridal_pink_-_morwell_rose_garden.jpg" class="card-img-top" alt="..."/>
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-    </div>
-    <div class="carousel-item">
-    <div class="card" >
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Bridal_pink_-_morwell_rose_garden.jpg/640px-Bridal_pink_-_morwell_rose_garden.jpg" class="card-img-top" alt="..."/>
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-</div>
- 
 
-)
+            <div className="testimonial-data">
+            <Slider {...settings}>
+{data.map((d) => (
+    <div className="testimonial-card">
+<div className="testimonial-img">
+<center>
+<img src={d.image} alt="client" className="client-img"/>
+</center>
+</div>
+<div className="testimonial-info">
+<p className="name-client">{d.name} </p>
+<p className="name-university">{d.university} </p>
+<p className="name-course">{d.course} </p>
+</div>
+</div>
+        ))}
+  </Slider>
+</div>
+</div>
+);
 }
 
+const data = [
+    {
+        name: "Jibon Mondal",
+        university: "University of technology sydney (UTS)",
+        course: "Master of Engineering",
+        image: "./jibon mondal.jpg",
+        review: "I am very happy with the service provided by the team. They helped me to get into the university of my choice and I am very grateful for that.",
+    },
+    {
+        name: "Mohammad Ali",
+        university: "University of Greenwich",
+        course: "MBA International Business",
+        image: "./mohammad ali.jpg",
+         review: "I am very happy with the service provided by the team. They helped me to get into the university of my choice and I am very grateful for that.",
+    },
+    {
+        name: "Mohammad Shabaz Ghani",
+        university: "University of Greenwich",
+        course: "MBA International Business",
+        image: "./mohammad shabaz ghani.jpg",
+         review: "I am very happy with the service provided by the team. They helped me to get into the university of my choice and I am very grateful for that.",
+    },
+    {
+        name: "Chandrakanth Kammari",
+        university: "University of Greenwich",
+        course: "MSc Pharmaceutical Sciences",
+        image: "./chandrakanth kammari .jpg",
+         review: "I am very happy with the service provided by the team. They helped me to get into the university of my choice and I am very grateful for that.",
+    }
+]
+
 export default Testimonial;
+
+
