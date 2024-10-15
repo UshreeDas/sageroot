@@ -3,8 +3,8 @@ import "./MainPage.css";
 import University from "../University/University";
 import Why from "../Why-choose/why-choose";
 import About from "../About-us/about-us";
-import Feedback from "../Feedback/feedback";
 
+import Testimonial from "../Testimonials/testimonial";
 function Main() {
     return (
         <div>
@@ -28,7 +28,8 @@ function Main() {
             </div>
             <University/>
             <Why/>
-            <Feedback/>
+           
+            <Testimonial/>
             <About/>
         </div>
     )

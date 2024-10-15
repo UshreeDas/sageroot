@@ -9,7 +9,7 @@
     align-items: center;
     gap: 80px;
     padding-top: 3rem;
-    padding-bottom: 3rem;
+   
 }
 
 .img-one, .img-two, .img-three, .img-four, .img-five {
@@ -21,7 +21,7 @@
 .img-two {
     width: 50%;
     padding-left: 40px;
-    padding-bottom: 13px;
+    padding-bottom: 8px;
 }
 
 .img-three {
@@ -39,7 +39,7 @@
 .img-five {
     width: 85%;
     padding-left: 8px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .tag {
