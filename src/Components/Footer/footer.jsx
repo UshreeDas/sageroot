@@ -5,7 +5,7 @@ function Footer() {
     return (
         <div className="footer">
             <div className="first-footer">
-                <img src="/logo.jpeg" alt="Logo" className="logo-footer"/>
+                <img src="/logo .svg" alt="Logo" className="logo"/>
                 <p className="plan">A plan for every dream</p>
                 <a href="/" className="privacy">
                     <p className="policy">Privacy Policy

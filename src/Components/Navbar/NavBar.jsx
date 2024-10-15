@@ -11,7 +11,7 @@ function NavBar() {
 
     return (
         <nav className="header">
-            <Link to="/"><img src="./logo.jpeg" alt="Logo" /></Link>
+            <Link to="/"><img src="./logo .svg" className="logo" alt="Logo" /></Link>
             <div className={`hamburger ${isOpen ? "open" : ""}`} onClick={toggleMenu}>
                 <div className="bar"></div>
                 <div className="bar"></div>
