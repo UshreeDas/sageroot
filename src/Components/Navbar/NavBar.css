@@ -1,9 +1,9 @@
-img {
+.logo {
     width: 150px;
     height: auto;
     top: 26px;
     left: 68px;
-    border-radius: 70%;
+    
 }
 
 .header {

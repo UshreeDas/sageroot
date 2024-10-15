@@ -4,6 +4,9 @@ import NavBar from "./Components/Navbar/NavBar";
 import Main from "./Components/MainPage/Main";
 import University from "./Components/University/University";
 import Footer from "./Components/Footer/footer";
+
+
+
 import './App.css';
 
 function App() {
@@ -15,7 +18,10 @@ function App() {
                     <Route path="/" element={<Main/>}/>
                     <Route path="/university" element={<University/>}/>
                 </Routes>
+             
                 <Footer/>
+             
+              
             </div>
         </Router>
     );
