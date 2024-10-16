@@ -1,0 +1,80 @@
+.testimonial-feedback{
+  display: flex;
+  flex-direction: row;
+  margin-left: 8rem;
+  margin-right: 8rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-feedback{
+  font-size: 4rem;
+  font-weight: 20rem;
+  font-family: "Merriweather", serif;
+
+}
+
+.testimonial-feedback {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.testimonial-data {
+  max-width: 700px;
+  margin: auto;
+}
+
+.testimonial-card {
+  text-align: center;
+  background-color: #d1d1d1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ 
+}
+
+.client-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+
+
+}
+
+.testimonial-info {
+  padding: 15px;
+}
+
+.name-client {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.name-university, .name-course {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.slick-prev:hover, .slick-next:hover {
+  color: #0056b3;
+}
+
+/* .slick-prev:before, .slick-next:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+} */
+
+.slick-prev:before {
+  color: #1b1b1c;
+  
+ 
+}
+
+.slick-next:before {
+  color: #1b1b1c;
+}
+
+
+.slick-slider .slick-slide {
+  padding: 0 5px; 
+}

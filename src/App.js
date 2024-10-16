@@ -4,7 +4,10 @@ import NavBar from "./Components/Navbar/NavBar";
 import Main from "./Components/MainPage/Main";
 import University from "./Components/University/University";
 import Footer from "./Components/Footer/footer";
-import UserForm from "./Components/Form/form";
+
+
+
+
 import './App.css';
 
 function App() {
@@ -15,7 +18,6 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Main/>}/>
                     <Route path="/university" element={<University/>}/>
-                    <Route path="/contact" element={<UserForm/>}/>
                 </Routes>
                 <Footer/>
             </div>
