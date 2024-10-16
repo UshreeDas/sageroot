@@ -1,4 +1,4 @@
-.testimonial-feedback{
+.testimonial-feedback {
   display: flex;
   flex-direction: row;
   margin-left: 8rem;
@@ -7,16 +7,65 @@
   align-items: center;
 }
 
-.client-feedback{
+.taxt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5rem;
+  color: #21386D;
+
+}
+
+
+.bi-quote {
   font-size: 4rem;
+  color: #000000;
+  vertical-align: middle;
+}
+
+/* Hover effect */
+.bi-quote:hover {
+  color: #6f6f6f;
+  transform: scale(1.05);
+  transition: transform 0.4s ease, color 0.4s ease;
+}
+
+.quote-icon.one {
+  display: inline-block;
+  font-size: 2rem;
+  color: #333;
+  transition: transform 0.7s ease;
+}
+
+.quote-icon.one:hover {
+  transform: scale(1.2);
+}
+
+.quote-icon.two {
+  display: inline-block;
+  font-size: 2rem;
+  color: #333;
+  transition: transform 0.7s ease;
+  transform: rotate(-180deg);
+
+}
+
+.quote-icon.two:hover {
+  transform: scale(1.2) rotate(-180deg);
+}
+
+.client-feedback {
+  font-size: 3.5rem;
   font-weight: 20rem;
   font-family: "Merriweather", serif;
+  text-align: center;
 
 }
 
 .testimonial-feedback {
   padding: 50px 0;
-  background-color: #f9f9f9;
+
 }
 
 .testimonial-data {
@@ -26,36 +75,67 @@
 
 .testimonial-card {
   text-align: center;
-  background-color: #d1d1d1;
+  background-color: #eaeaea;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
- 
+  /* border-radius: 10px; */
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  border: 1px solid #b2b2b2;
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.testimonial-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
 }
 
 .client-img {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
-
-
+  border: 1px solid #686868;
+  margin-top: -4rem;
 }
 
 .testimonial-info {
   padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .name-client {
   font-weight: bold;
   font-size: 1.2rem;
+  color: #981B1E;
+  margin-top: 10px;
+
 }
 
-.name-university, .name-course {
+.name-university,
+.name-course {
   font-size: 0.9rem;
   color: #777;
+
 }
 
-.slick-prev:hover, .slick-next:hover {
+.reviews {
+  padding-top: 20px;
+}
+
+.name-course {
+  margin-top: 20px;
+  background-color: #D06A6A;
+  color: white;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid color#981B1E;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
   color: #0056b3;
 }
 
@@ -66,15 +146,12 @@
 
 .slick-prev:before {
   color: #1b1b1c;
-  
- 
 }
 
 .slick-next:before {
   color: #1b1b1c;
 }
 
-
 .slick-slider .slick-slide {
-  padding: 0 5px; 
+  padding: 0 10px;
 }

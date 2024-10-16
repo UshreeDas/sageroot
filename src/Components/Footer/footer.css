@@ -71,7 +71,8 @@
         gap: 20px;
     }
 
-    .policy, .top {
+    .policy,
+    .top {
         padding: 0;
         text-align: center;
     }
@@ -91,7 +92,8 @@
         font-size: 14px;
     }
 
-    .policy, .top {
+    .policy,
+    .top {
         font-size: 12px;
     }
 
