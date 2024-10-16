@@ -5,14 +5,14 @@ function Footer() {
     return (
         <div className="footer">
             <div className="first-footer">
-                <img src="/logo .svg" alt="Logo" className="logo"/>
+                <img src="/SAGEROOTS INTERNATIONAL (3).svg" alt="Logo" className="logo" />
                 <p className="plan">A plan for every dream</p>
                 <a href="/" className="privacy">
                     <p className="policy">Privacy Policy
                         <br></br> Terms & Conditions</p>
                 </a>
                 <a href="/" className="back-to-top">
-                    <img src="/Back to top .svg" alt="" className="up-arrow"/>
+                    <img src="/Back to top .svg" alt="" className="up-arrow" />
                     <p className="top">Back to top</p>
                 </a>
             </div>
@@ -20,7 +20,6 @@ function Footer() {
             <p className="copy">
                 All rights reserved &copy; 2024 Sageroots International
             </p>
-
         </div>
     )
         ;

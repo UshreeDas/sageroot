@@ -6,11 +6,11 @@ function University() {
     return (
         <div className="main-heading">
             <div className="heading">
-                <h1>Discover Top <span>Universities</span></h1>
-                <img src="/library.svg" alt="library"/>
+                <h1 className="heading-text">Discover Top <span className="catchy-text">Universities</span></h1>
+                <img src="./Group.svg" alt="library" className="book-img"/>
             </div>
-            <p className="sub-heading">Explore our detailed breakdowns of the study abroad destinations around the
-                world!</p>
+            <span className="sub-heading">Explore our detailed breakdowns of the study abroad destinations around the
+                world!</span>
             <UniversityList/>
         </div>
     );

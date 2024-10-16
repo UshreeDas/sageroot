@@ -1,37 +1,42 @@
 .main-heading {
     padding-top: 4rem;
     padding-bottom: 4rem;
-    margin-left: 5rem;
+  
 }
 
 .heading {
-    font-family: "Raleway", sans-serif;
-    font-size: 1.5rem;
-    color: #21386D;
+    
     display: flex;
-    align-items: center;
+   flex-direction: row;
+   align-items: center;
 }
-
-.heading span {
-    color: #981B1E;
-    margin-left: 5px;
-}
-
-.heading img {
-    width: 150px; /* Default size */
-    height: auto;
-    margin-left: 1rem;
-}
-
-p {
+.heading-text{
     font-family: "Raleway", sans-serif;
-    font-size: 1rem;
-    padding-top: 3rem;
+    font-size: 3rem;
+    color: #21386D;
+    margin-left: 7rem;
 }
+
+.catchy-text {
+    color: #981B1E;
+   
+}
+
+.book-img {
+    width: 10px; /* Set the width of the image */
+    height: 10px; /* Maintain the aspect ratio */
+    transition: transform 0.3s ease;   
+  }
+  
+  .book-img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
 
 .sub-heading {
     font-family: "Raleway", sans-serif;
     font-size: 1rem;
+    margin-left: 7rem;
 }
 
 /* Media Queries for Responsiveness */
@@ -48,10 +53,7 @@ p {
         align-items: flex-start;
     }
 
-    .heading img {
-        width: 100px; /* Adjusted size for tablets */
-        margin-top: 1rem;
-    }
+    
 
     p {
         font-size: 0.9rem;

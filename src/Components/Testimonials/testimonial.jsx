@@ -6,45 +6,49 @@ import "./testimonial.css";
 
 
 function Testimonial() {
-  
+
     const settings = {
         dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 2,
         slidesToScroll: 1,
-        autoplay: true,           
-    autoplaySpeed: 3000,
-      };
+        autoplay: true,
+        autoplaySpeed: 3000,
+    };
     return (
-        <div className="testimonial-feedback">
-
-<div className="taxt">
-<p className="client-feedback">
-Hear From Our Happy Clients!
-</p>
-</div>
-
-            <div className="testimonial-data">
-            <Slider {...settings}>
-{data.map((d) => (
-    <div className="testimonial-card">
-<div className="testimonial-img">
-<center>
-<img src={d.image} alt="client" className="client-img"/>
-</center>
-</div>
-<div className="testimonial-info">
-<p className="name-client">{d.name} </p>
-<p className="name-university">{d.university} </p>
-<p className="name-course">{d.course} </p>
-</div>
-</div>
-        ))}
-  </Slider>
-</div>
-</div>
-);
+        <div className="feedback-part">
+            <h1 className="heading-text">What Our <span className="catchy-text">Students Say</span></h1>
+            <div className="testimonial-feedback">
+                <div className="taxt">
+                    <div className="quote-icon one"><i class="bi bi-quote"></i></div>
+                    <p className="client-feedback">
+                        Hear From Our Happy Students!
+                    </p>
+                    <div className="quote-icon two"><i class="bi bi-quote"></i></div>
+                </div>
+                <div className="testimonial-data">
+                    <Slider {...settings}>
+                        {data.map((d) => (
+                            <div className="testimonial-card">
+                                <div className="testimonial-img">
+                                    <center>
+                                        <img src={d.image} alt="client" className="client-img" />
+                                    </center>
+                                </div>
+                                <div className="testimonial-info">
+                                    <h5 className="name-client">{d.name} </h5>
+                                    <span className="name-university">{d.university} </span>
+                                    <span className="reviews">{d.review} </span>
+                                    <h6 className="name-course">{d.course} </h6>
+                                </div>
+                            </div>
+                        ))}
+                    </Slider>
+                </div>
+            </div>
+        </div>
+    );
 }
 
 const data = [
@@ -60,21 +64,21 @@ const data = [
         university: "University of Greenwich",
         course: "MBA International Business",
         image: "./mohammad ali.jpg",
-         review: "I am very happy with the service provided by the team. They helped me to get into the university of my choice and I am very grateful for that.",
+        review: "I am very happy with the service provided by the team. They helped me to get into the university of my choice and I am very grateful for that.",
     },
     {
         name: "Mohammad Shabaz Ghani",
         university: "University of Greenwich",
         course: "MBA International Business",
         image: "./mohammad shabaz ghani.jpg",
-         review: "I am very happy with the service provided by the team. They helped me to get into the university of my choice and I am very grateful for that.",
+        review: "I am very happy with the service provided by the team. They helped me to get into the university of my choice and I am very grateful for that.",
     },
     {
         name: "Chandrakanth Kammari",
         university: "University of Greenwich",
         course: "MSc Pharmaceutical Sciences",
         image: "./chandrakanth kammari .jpg",
-         review: "I am very happy with the service provided by the team. They helped me to get into the university of my choice and I am very grateful for that.",
+        review: "I am very happy with the service provided by the team. They helped me to get into the university of my choice and I am very grateful for that.",
     }
 ]
 

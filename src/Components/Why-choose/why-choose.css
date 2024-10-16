@@ -1,79 +1,63 @@
-.color {
-    color: #981B1E;
+
+.why-choose {
+  padding: 50px 0;
+
+  text-align: center;
 }
 
-.reasons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
-    padding-top: 3rem;
-   
+.why-choose-input {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.img-one, .img-two, .img-three, .img-four, .img-five {
-    height: auto;
-    width: 60%;
-    padding-left: 25px;
+.why-choose-content {
+
+  padding: 20px;
+  width: 250px;
+  margin: 15px;
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+  cursor: pointer;
 }
 
-.img-two {
-    width: 50%;
-    padding-left: 40px;
-    padding-bottom: 8px;
+.why-choose-content:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
 
-.img-three {
-    width: 70%;
-    padding-left: 15px;
-    padding-bottom: 18px;
+.why-choose-img {
+  margin-bottom: 8px;
 }
 
-.img-four {
-    width: 70%;
-    padding-left: 10px;
-    padding-bottom: 10px;
+.choose-img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
 }
 
-.img-five {
-    width: 85%;
-    padding-left: 8px;
-    padding-bottom: 10px;
+.why-choose-reason {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 5px;
 }
 
-.tag {
-    text-align: center;
-}
-
-.group {
-    display: grid;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-
-/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-    .reasons {
-        flex-direction: column;
-        gap: 40px;
-    }
+  .why-choose-input {
+    justify-content: center;
+  }
 
-    .img-one, .img-two, .img-three, .img-four, .img-five {
-        width: 80%;
-        padding-left: 0;
-    }
+  .why-choose-content {
+    width: 200px;
+  }
 }
 
 @media (max-width: 480px) {
-    .reasons {
-        gap: 20px;
-    }
-
-    .img-one, .img-two, .img-three, .img-four, .img-five {
-        width: 100%;
-        padding-left: 0;
-    }
+  .why-choose-content {
+    width: 100%;
+    margin: 10px 0;
+  }
 }
