@@ -5,7 +5,7 @@ function Footer() {
     return (
         <div className="footer">
             <div className="first-footer">
-                <img src="/SAGEROOTS INTERNATIONAL (3).svg" alt="Logo" className="logo" />
+                <img src="/Logo(Normal).svg" alt="Logo" className="logo" />
                 <p className="plan">A plan for every dream</p>
                 <a href="/" className="privacy">
                     <p className="policy">Privacy Policy

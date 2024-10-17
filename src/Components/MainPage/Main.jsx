@@ -7,20 +7,19 @@ function Main() {
   return (
     <div>
       <div className="Main">
-
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="2000" data-pause="false" >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="./John-Hopkins-Business-School.jpg" alt="First slide" className="carousel-img" />
+        <div id="carouselExampleControls" className="carousel slide" data-ride="carousel" data-interval="2000" data-pause="false" >
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <img className="d-block w-100" src="./John-Hopkins-Business-School.jpg" alt="First slide" className="carousel-img" />
             </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="./cambridge.jpeg" alt="Second slide" className="carousel-img" />
+            <div className="carousel-item">
+              <img className="d-block w-100" src="./cambridge.jpeg" alt="Second slide" className="carousel-img" />
             </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="./pexels-pixabay-159490.jpg" alt="Third slide" className="carousel-img" />
+            <div className="carousel-item">
+              <img className="d-block w-100" src="./pexels-pixabay-159490.jpg" alt="Third slide" className="carousel-img" />
             </div>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
           </a>
