@@ -1,4 +1,4 @@
-
+/* 
 .why-choose {
   padding: 50px 0;
 
@@ -59,5 +59,86 @@
   .why-choose-content {
     width: 100%;
     margin: 10px 0;
+  }
+} */
+
+.why-choose {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.why-choose-input {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual item styling */
+.why-choose-content {
+  padding: 20px;
+  width: 250px;
+  margin: 15px;
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+  cursor: pointer;
+}
+
+.why-choose-content:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.why-choose-img {
+  margin-bottom: 8px;
+}
+
+.choose-img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.why-choose-reason {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 5px;
+}
+
+/* Responsive for iPhone 14 Pro Max (430px width) */
+@media (max-width: 430px) {
+  .why-choose-input {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+  }
+
+  .why-choose-content {
+    width: 100%; /* Make the content take full width */
+    margin: 10px 0; /* Adjust margin to reduce spacing */
+    padding: 15px;
+  }
+
+  .choose-img {
+    width: 60px; /* Scale down the images for smaller screens */
+    height: 60px;
+  }
+
+  .why-choose-reason {
+    font-size: 0.9rem; /* Slightly smaller font size for reasons */
+  }
+}
+
+/* Further scaling for smaller screens */
+@media (max-width: 768px) {
+  .why-choose-input {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .why-choose-content {
+    width: 80%;
+    margin: 15px 0;
   }
 }

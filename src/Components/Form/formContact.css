@@ -1,90 +1,197 @@
+.element {
+  position: relative; /* Position relative for the pseudo-element */
+  background-image: url('https://indiaeducationdiary.in/wp-content/uploads/2022/08/University-of-Greenwich.jpg');
+  background-size: cover; /* Makes the image cover the entire element */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image */
+  height: 400px; /* Set a height for the element */
+  width: 100%; /* Set a width for the element */
+}
+
+.element::before {
+  content: ''; /* Required for pseudo-element */
+  position: absolute; /* Position absolute to overlay */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(33, 57, 151, 0.5); /* Adjust the RGBA values for color and opacity */
+  z-index: 1; /* Ensure it’s above the background image */
+}
+
+.element h1 { /* Example for text within the element */
+  position: relative; /* Position relative to appear above the overlay */
+  z-index: 2; /* Higher than the pseudo-element */
+  color: white; /* Text color */
+  text-align: center;
+  padding-top: 11rem;
+  font-size: 4rem;
+  
+}
+
+.form-c {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 80px;
+}
+
 .form-container {
-  margin-left: 2rem;
-    width: 40%;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 50%;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form Elements */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  color: #555;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #3d85c6;
+}
+
+/* Buttons */
+.next-button,
+.previous-button,
+.submit-button {
+  background-color: #3d85c6;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.next-button:hover,
+.previous-button:hover,
+.submit-button:hover {
+  background-color: #2a5f92;
+}
+
+.next-button,
+.submit-button {
+  display: block;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.success-message {
+  text-align: center;
+  color: #28a745;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Map Container */
+.map-container {
+  width: 45%;
+  border-radius: 10px; 
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f7f6;
+}
+
+.contact-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 10px; */
+}
+
+.social {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center the icons horizontally */
+  align-items: center; /* Center the icons vertically */
+  gap: 15px; /* Space between icons */
+ 
+}
+
+/* Individual Icon Styles */
+.social i {
+  font-size: 30px; /* Increase the icon size */
+  color: #555; /* Default icon color */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Icon Hover Effects */
+.social i:hover {
+  color: #3d85c6; /* Change color on hover */
+  transform: scale(1.2); /* Slightly enlarge the icon on hover */
+}
+
+/* Responsive Styling */
+@media (max-width: 992px) {
+  .form-c {
+      flex-direction: column;
+      align-items: center;
   }
-  
-  h2 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
+
+  .form-container,
+  .map-container {
+      width: 100%;
   }
-  
-  .form-group {
-    margin-bottom: 15px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  input[type="text"],
-  input[type="tel"],
-  input[type="email"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    box-sizing: border-box;
-  }
-  
-  input[type="text"]:focus,
-  input[type="tel"]:focus,
-  input[type="email"]:focus {
-    border-color: #007bff;
-    outline: none;
-  }
-  
+
+  .next-button,
+  .previous-button,
   .submit-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #981B1E;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition:  0.3s ease;
+      margin: 10px 0;
   }
-  
-  .submit-button:hover {
-    background-color: #bb3133;
+}
+
+/* Social Icons Container */
+/* Responsive Styling */
+@media (max-width: 600px) {
+  .social i {
+      font-size: 24px; /* Reduce icon size on smaller screens */
   }
-  .submit-button:active {
-    /*transform: 0.8 ;*/
-  }
-  
-  .success-message {
-    margin-top: 15px;
-    color: #21386D;
-    font-weight: bold;
-    text-align: center;
-  }
-  .form-c{
-    margin-left: 140px;
-    font-size: 16px;
-    margin-right: 140px;
-    font-family: "Raleway", sans-serif;
-    padding-top: 3rem;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-  }
-  .get-touch{
-    padding-top: 12rem;
-    color: #21386D;
-    font-family: "Raleway", sans-serif;
-    font-weight: bold;
-  }
-  .free{
-    font-size: 50px;
-    padding-bottom: 30px;
-  }
+}
