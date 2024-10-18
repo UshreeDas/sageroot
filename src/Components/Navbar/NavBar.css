@@ -328,7 +328,7 @@
     opacity: 1;
     border-radius: 1rem;
     transform: rotate(0deg);
-    background-color: #000;
+    background-color: #1b1b1c;
     transition: 0.25s ease-in-out;
 }
 
@@ -362,7 +362,7 @@
 
 @media screen and (max-width: 768px) {
     .header.on-scroll {
-        background: #fff;
+        background: #000000b3;
     }
 
     .header.on-scroll li {
