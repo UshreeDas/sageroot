@@ -73,7 +73,7 @@ function NavBar() {
                                 <span className="wiggle"></span>
                             </li>
                         </Link>
-                        <Link to="/project" className="menu-link">
+                        <Link to="/university" className="menu-link">
                             <li className="menu-item">
                                 Connected University
                                 <span className="wiggle"></span>
