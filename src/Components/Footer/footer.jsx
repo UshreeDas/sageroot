@@ -41,8 +41,7 @@ function Footer() {
                 <p className="footer-bottom-text">© 2024 All Rights Reserved. Developed by Sageroots</p>
             </div>
         </>
-    )
-        ;
+    );
 }
 
 export default Footer;

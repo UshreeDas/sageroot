@@ -2,11 +2,11 @@ import React, {useEffect} from "react";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import NavBar from "./Components/Navbar/NavBar";
 import Main from "./Components/MainPage/Main";
-import University from "./Components/University/University";
 import Footer from "./Components/Footer/footer";
 
 
 import './App.css';
+import UniversitySection from "./Components/University-section/university-section";
 
 function App() {
     useEffect(() => {
@@ -21,7 +21,7 @@ function App() {
                 <NavBar/>
                 <Routes>
                     <Route path="/" element={<Main/>}/>
-                    <Route path="/university" element={<University/>}/>
+                    <Route path="/university" element={<UniversitySection/>}/>
                 </Routes>
                 <Footer/>
             </div>
