@@ -2,12 +2,11 @@ import React,{useEffect} from "react";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import NavBar from "./Components/Navbar/NavBar";
 import Main from "./Components/MainPage/Main";
-import University from "./Components/University/University";
 import Footer from "./Components/Footer/footer";
-// import FormContact from "./Components/Form/formContact";
-
+import UniversitySection from "./Components/University-section/university-section";
 
 import './App.css';
+
 
 function App() {
     useEffect(() => {
@@ -21,9 +20,9 @@ function App() {
             <div className="app-container">
                 <NavBar/>
                 <Routes>
+                    <Route path="/" element={<Main/>}/>
+                    <Route path="/university" element={<UniversitySection/>}/>
                     <Route path="/" element={<Main />} />
-                    <Route path="/university" element={<University />} />
-                    {/* <Route path="/contact" element={<FormContact />} /> */}
                 </Routes>
                 <Footer />
             </div>

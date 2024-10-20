@@ -11,7 +11,11 @@ function University() {
             <span className="sub-heading">Explore our detailed breakdowns of the study abroad destinations around the
                 world!</span>
             <UniversityList/>
+            <a href="/university" className="view-link">
+                <button className="view-btn">View More</button>
+            </a>
         </div>
+
     );
 }
 
