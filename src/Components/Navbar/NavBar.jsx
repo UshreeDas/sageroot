@@ -81,11 +81,13 @@ function NavBar() {
                         </Link>
                     </ul>
                 </div>
-                <Link to="/contact">
+                {/* <Link to="/contact"> */}
+                <a href="https://forms.gle/bgnWWtsRRM5EuA569" target="_blank" rel="noreferrer">
                     <button className={`btn nav-btn ${scrolling ? 'on-scroll' : ''}`}>
                         Contact Us
                     </button>
-                </Link>
+                    </a>
+                {/* </Link> */}
             </nav>
         </header>
     );

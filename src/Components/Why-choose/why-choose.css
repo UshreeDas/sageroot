@@ -110,7 +110,7 @@
 /* Responsive for iPhone 14 Pro Max (430px width) */
 @media (max-width: 430px) {
   .why-choose-input {
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: row; /* Stack items vertically */
     align-items: center;
   }
 
