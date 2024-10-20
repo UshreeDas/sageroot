@@ -4,18 +4,17 @@
     padding-top: 4rem;
     padding-bottom: 4rem;
 }
-
 .heading {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.heading-text {
+.heading-text{
     font-family: "Raleway", sans-serif;
     font-size: 3rem;
     color: #21386D;
-    margin-left: 7rem;
+   padding-left: 100px;
 }
 
 .catchy-text {
@@ -26,7 +25,7 @@
 .sub-heading {
     font-family: "Raleway", sans-serif;
     font-size: 1rem;
-    margin-left: 7rem;
+   padding-left: 100px;
 }
 
 .view-link{

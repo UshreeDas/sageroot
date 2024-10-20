@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import HereFrom from "./here-from";
 import "./testimonial.css";
 
 
@@ -20,13 +21,7 @@ function Testimonial() {
         <div className="feedback-part">
             <h1 className="heading-text">What Our <span className="catchy-text">Students Say</span></h1>
             <div className="testimonial-feedback">
-                <div className="taxt">
-                    <div className="quote-icon one"><i class="bi bi-quote"></i></div>
-                    <p className="client-feedback">
-                        Hear From Our Happy Students!
-                    </p>
-                    <div className="quote-icon two"><i class="bi bi-quote"></i></div>
-                </div>
+                <HereFrom/>
                 <div className="testimonial-data">
                     <Slider {...settings}>
                         {data.map((d) => (

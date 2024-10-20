@@ -1,12 +1,12 @@
-import React, {useEffect} from "react";
+import React,{useEffect} from "react";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import NavBar from "./Components/Navbar/NavBar";
 import Main from "./Components/MainPage/Main";
 import Footer from "./Components/Footer/footer";
-
+import UniversitySection from "./Components/University-section/university-section";
 
 import './App.css';
-import UniversitySection from "./Components/University-section/university-section";
+
 
 function App() {
     useEffect(() => {
@@ -17,13 +17,14 @@ function App() {
     }, []);
     return (
         <Router>
-            <div className="app-container no-scrollbar">
+            <div className="app-container">
                 <NavBar/>
                 <Routes>
                     <Route path="/" element={<Main/>}/>
                     <Route path="/university" element={<UniversitySection/>}/>
+                    <Route path="/" element={<Main />} />
                 </Routes>
-                <Footer/>
+                <Footer />
             </div>
         </Router>
     );
