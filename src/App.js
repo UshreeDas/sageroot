@@ -26,6 +26,7 @@ function App() {
                     {/* <Route path="/contact" element={<FormContact />} /> */}
                 </Routes>
                 <Footer />
+                
             </div>
         </Router>
     );
