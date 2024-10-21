@@ -10,7 +10,7 @@
 }
 /* Container for the testimonials */
 .testimonial-data {
-  width: 60%;
+  width: 55%;
   margin: 0 auto;
   padding: 20px 0;
 }
@@ -94,11 +94,43 @@
   color: #1b1b1c;
 }
 
-/* .testimonial-info {
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-} */
+@media only screen and (max-width: 430px) {
+  /* Adjust padding and layout for smaller screens */
+  .testimonial-feedback {
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 20px;
+  }
 
+  .testimonial-data {
+    width: 90%;
+    padding: 10px 0;
+  }
+
+  .testimonial-card {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 15px;
+  }
+
+  .testimonial-img img {
+    width: 100px;
+    height: 100px;
+    margin-top: -3rem;
+  }
+
+  .name-client {
+    font-size: 1.1rem;
+  }
+
+  .name-university, .reviews {
+    font-size: 13px;
+  }
+
+  .name-course {
+    font-size: 14px;
+    padding: 6px;
+    margin-top: 15px;
+  }
+}
