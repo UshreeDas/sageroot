@@ -69,13 +69,13 @@
 
 @media (max-width: 480px) {
     .main-heading {
-        margin-left: 1rem;
+        /* margin-left: 1rem; */
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
 
     .heading {
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
 
     .heading img {

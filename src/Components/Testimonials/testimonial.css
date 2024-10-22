@@ -10,7 +10,7 @@
 }
 /* Container for the testimonials */
 .testimonial-data {
-  width: 55%;
+  width: 40%;
   margin: 0 auto;
   padding: 20px 0;
 }
@@ -80,7 +80,7 @@
   padding: 0 10px;
 } 
 
-.slick-prev:hover,
+/* .slick-prev:hover,
 .slick-next:hover {
   color: #0056b3;
 }
@@ -92,7 +92,7 @@
 
 .slick-next:before {
   color: #1b1b1c;
-}
+} */
 
 @media only screen and (max-width: 430px) {
   /* Adjust padding and layout for smaller screens */
