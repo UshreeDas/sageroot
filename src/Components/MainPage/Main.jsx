@@ -16,7 +16,7 @@ function Main() {
               <img className="d-block w-100" src="./cambridge.jpeg" alt="Second slide" className="carousel-img" />
             </div>
             <div className="carousel-item">
-              <img className="d-block w-100" src="./pexels-pixabay-159490.jpg" alt="Third slide" className="carousel-img" />
+              <img className="d-block w-100" src="./photo-1617297296495-4af2290c2b84.jpeg" alt="Third slide" className="carousel-img" />
             </div>
           </div>
           <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
