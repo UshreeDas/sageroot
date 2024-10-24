@@ -45,7 +45,7 @@
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .main-heading {
-        margin-left: 2rem;
+        /* margin-left: 2rem; */
         padding-top: 2rem;
         padding-bottom: 2rem;
     }

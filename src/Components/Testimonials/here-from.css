@@ -1,8 +1,8 @@
 .text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+     justify-content: center;
+    align-items: center; 
     color: #21386D;
   }
 
@@ -46,7 +46,7 @@
   }
 
   @media (max-width: 950px) {
-    .taxt {
+    .text {
         display: none; /* Hides HereFrom on screens less than 430px wide */
     }
   }
