@@ -5,6 +5,7 @@ import Main from "./Components/MainPage/Main";
 import Footer from "./Components/Footer/footer";
 import UniversitySection from "./Components/University-section/university-section";
 import './App.css';
+import FormContact from "./Components/Form/formContact";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
                     <Route path="/" element={<Main/>}/>
                     <Route path="/university" element={<UniversitySection/>}/>
                     <Route path="/" element={<Main />} />
+                    <Route path="/contact" element={<FormContact/>} />
                 </Routes>
                 <Footer />
             </div>
