@@ -1,15 +1,15 @@
 import React from "react";
 import "./MainPage.css";
-import University from "../University/University";
+// import University from "../University/University";
 import Why from "../Why-choose/why-choose";
 import Testimonial from "../Testimonials/testimonial";
 
 function Main() {
   return (
-    <div>
+  
       <div className="Main">
-        {/* Bootstrap Carousel */}
-        <div
+      
+        {/* <div
           id="carouselExampleControls"
           className="carousel slide"
           data-ride="carousel"
@@ -17,7 +17,7 @@ function Main() {
           data-pause="false"
         >
           <div className="carousel-inner">
-            {/* First Slide */}
+        
             <div className="carousel-item active">
               <img
                 className="d-block w-100 carousel-img"
@@ -26,7 +26,7 @@ function Main() {
               />
             </div>
 
-            {/* Second Slide */}
+         
             <div className="carousel-item">
               <img
                 className="d-block w-100 carousel-img"
@@ -35,7 +35,7 @@ function Main() {
               />
             </div>
 
-            {/* Third Slide */}
+        
             <div className="carousel-item">
               <img
                 className="d-block w-100 carousel-img"
@@ -45,7 +45,7 @@ function Main() {
             </div>
           </div>
 
-          {/* Carousel Controls */}
+      
           <a
             className="carousel-control-prev"
             href="#carouselExampleControls"
@@ -64,11 +64,17 @@ function Main() {
             <span className="carousel-control-next-icon" aria-hidden="true"></span>
             <span className="sr-only">Next</span>
           </a>
-        </div>
-      </div>
+        </div> */}
+        <div className="main-page">
+<div className="main-text">
+<h1 className="main-head"> Gateway to World-Class Education</h1>
+<p className="main-subhead">"Where Knowledge Meets Opportunity"</p>
+</div>
+  </div>
+
 
       {/* Other Components */}
-      <University />
+      {/* <University /> */}
       <Why />
       <Testimonial />
     </div>

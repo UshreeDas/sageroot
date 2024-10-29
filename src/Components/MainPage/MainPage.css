@@ -1,4 +1,80 @@
 
+.main-page {
+    position: relative;
+    background-image: url('https://indiaeducationdiary.in/wp-content/uploads/2022/08/University-of-Greenwich.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 800px;
+    width: 100%;
+   
+  }
+  
+  .main-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(15, 32, 98, 0.5);
+    z-index: 1;
+  }
+
+  .main-text{
+    padding-top: 19rem;
+  }
+  .main-head{
+   text-align: center;
+color: white;
+font-size: 4.5rem;
+font-weight: 4rem;
+position: relative;
+  z-index: 2;
+  }
+
+  .main-subhead{
+text-align: center;
+color: white;
+font-weight: 3rem;
+font-size: 2rem;
+position: relative;
+  z-index: 2;
+  padding-top: 1rem;
+  }
+
+
+  .main-heading {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.heading-text{
+    font-family: "Raleway", sans-serif;
+    font-size: 3rem;
+    color: #21386D;
+   padding-left: 80px;
+}
+
+.catchy-text {
+    color: #981B1E;
+
+}
+
+.sub-heading {
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+   padding-left: 80px;
+}
+/* carousel */
+
 .carousel-img {
     width: auto;
     /* Default size */
