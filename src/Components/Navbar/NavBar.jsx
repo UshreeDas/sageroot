@@ -61,13 +61,13 @@ function NavBar() {
                 </div>
                 <div className={`menu ${burgerActive ? 'is-active' : ''}`} id="menu">
                     <ul className="menu-inner">
-                        <Link to="/about" className="menu-link">
+                        <Link to="/" className="menu-link">
                             <li className="menu-item">
                                 About
                                 <span className="wiggle"></span>
                             </li>
                         </Link>
-                        <Link to="/service" className="menu-link">
+                        <Link to="/" className="menu-link">
                             <li className="menu-item">
                                 Programs Offered
                                 <span className="wiggle"></span>
@@ -81,13 +81,11 @@ function NavBar() {
                         </Link>
                     </ul>
                 </div>
-                {/* <Link to="/contact"> */}
-                <a href="https://forms.gle/bgnWWtsRRM5EuA569" target="_blank" rel="noreferrer">
+                <Link to="/contact">
                     <button className={`btn nav-btn ${scrolling ? 'on-scroll' : ''}`}>
                         Contact Us
                     </button>
-                    </a>
-                {/* </Link> */}
+                </Link>
             </nav>
         </header>
     );
