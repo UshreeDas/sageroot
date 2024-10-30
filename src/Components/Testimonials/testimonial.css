@@ -1,17 +1,8 @@
-.testimonial-feedback {
-  display: flex;
-  flex-direction: row;
-  justify-items: center;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px;
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
+
 
 /* Container for the testimonials */
 .testimonial-data {
-  width: 40%;
+  width: 90%;
   margin: 0 auto;
   padding: 20px 0;
 }
