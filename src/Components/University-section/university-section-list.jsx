@@ -36,6 +36,62 @@ const universityList = [
         'image': "https://github.com/DMMPrice/sageroot-images/blob/master/university%20logo%20&%20picture/University%20of%20Suffolk/UoS%20image.jpeg?raw=true",
         'flag': "https://github.com/DMMPrice/sageroot-images/blob/master/university%20logo%20&%20picture/University%20of%20Suffolk/University_of_Suffolk_Logo.png?raw=true",
         'countryName': 'UK'
+    },
+    {
+        'id': 6,
+        'universityName': 'University of Ulster',
+        'image': "https://github.com/DMMPrice/sageroot-images/blob/master/university%20logo%20&%20picture/University%20of%20Ulster/university_of_ulster_image.jpg?raw=true",
+        'flag': "https://github.com/DMMPrice/sageroot-images/blob/master/university%20logo%20&%20picture/University%20of%20Ulster/university_of_ulster_icon.png?raw=true",
+        'countryName': 'UK',
+    },
+    {
+        'id': 7,
+        'universityName': 'Aberystwyth university',
+        'image': "https://github.com/DMMPrice/sageroot-images/blob/master/university%20logo%20&%20picture/aberystwyth%20university/aberystwyth_university_image.jpg?raw=true",
+        'flag': "https://raw.githubusercontent.com/DMMPrice/sageroot-images/e18666dd5171dd6bb4a16c7d92f8bee77c13bca0/university%20logo%20%26%20picture/aberystwyth%20university/aberystwyth_university_logo.svg",
+        'countryName': 'UK'
+    },
+    {
+        'id': 8,
+        'universityName': 'Alliance Manchester Business School',
+        'image': "https://github.com/DMMPrice/sageroot-images/blob/master/university%20logo%20&%20picture/alliance%20manchester%20business%20school/alliance_manchester_business_school_image.jpeg?raw=true",
+        "flag": "https://github.com/DMMPrice/sageroot-images/blob/master/university%20logo%20&%20picture/alliance%20manchester%20business%20school/alliance_manchester_business_school%20_logo.png?raw=true",
+        'countryName': 'UK'
+    },
+    {
+        'id': 9,
+        'universityName': 'Amity University London',
+        'image': "https://github.com/DMMPrice/sageroot-images/blob/master/university%20logo%20&%20picture/amity%20university%20(IN)%20london/amity_university(IN)_london%20image.jpeg?raw=true",
+        'flag': "https://github.com/DMMPrice/sageroot-images/blob/master/university%20logo%20&%20picture/amity%20university%20(IN)%20london/amity_university_(IN)_london_logo.png?raw=true",
+        'countryName': 'UK'
+    },
+    {
+        'id': 10,
+        'universityName': 'Architectural Association School of Architecture',
+        'image': "https://github.com/DMMPrice/sageroot-images/blob/master/university%20logo%20&%20picture/architectural%20association%20school%20of%20architecture/architectural_association_school_of_architecture_image.jpeg?raw=true",
+        'flag': "https://github.com/DMMPrice/sageroot-images/blob/master/university%20logo%20&%20picture/architectural%20association%20school%20of%20architecture/architectural_association_school_of_architecture_logo.png?raw=true",
+        'countryName': 'UK'
+    },
+    {
+        'id': 11,
+        'universityName': 'Arts University Bournemouth',
+        'image': "https://github.com/DMMPrice/sageroot-images/blob/master/university%20logo%20&%20picture/arts%20university%20bournemouth/arts_university_bournemouth_image.jpeg?raw=true",
+        'flag': "https://github.com/DMMPrice/sageroot-images/blob/master/university%20logo%20&%20picture/arts%20university%20bournemouth/arts_university%20bournemouth_logo.png?raw=true",
+        'countryName': 'UK'
+    },
+    {
+        'id': 12,
+        'universityName': 'Aston University',
+        'image': "https://github.com/DMMPrice/sageroot-images/blob/master/university%20logo%20&%20picture/aston%20university/aston_university_images.jpg?raw=true",
+        'flag': "https://github.com/DMMPrice/sageroot-images/blob/master/university%20logo%20&%20picture/aston%20university/aston_university_logo.png?raw=true",
+        'countryName': 'UK'
+    },
+    {
+        'id': 13,
+        'universityName': 'Bath Spa University',
+        'image': "https://github.com/DMMPrice/sageroot-images/blob/master/university%20logo%20&%20picture/bath%20spa%20university/bath_spa%20university_image.jpg?raw=true",
+        'flag': "https://github.com/DMMPrice/sageroot-images/blob/master/university%20logo%20&%20picture/bath%20spa%20university/bath_spa%20university_logo.png?raw=true",
+        'countryName': 'UK'
     }
 ];
 
