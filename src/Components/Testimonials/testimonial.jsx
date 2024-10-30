@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import HereFrom from "./here-from";
 import "./testimonial.css";
 
 
@@ -12,16 +11,61 @@ function Testimonial() {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 1,
+        slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 3000,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
     };
+    
+
+    const headingRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  const handleScroll = () => {
+    if (headingRef.current) {
+      const rect = headingRef.current.getBoundingClientRect();
+      // Check if the heading is in the viewport
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        setIsVisible(true); // Set visible to true when in view
+      }
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    // Cleanup the event listener
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  
     return (
         <div className="feedback-part">
-            <h1 className="heading-text">What Our <span className="catchy-text">Students Say</span></h1>
-            <div className="testimonial-feedback">
-                <HereFrom/>
+           <h1 
+      className={`heading-text ${isVisible ? "visible" : ""}`} 
+      ref={headingRef}
+    >
+      Here From Our <span className="catchy-text">Happy Students</span>
+    </h1>
+            <div  className={`testimonial-feedback ${isVisible ? "visible" : ""}`} 
+      ref={headingRef}>
                 <div className="testimonial-data">
                     <Slider {...settings}>
                         {data.map((d) => (
