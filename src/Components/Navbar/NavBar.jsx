@@ -61,7 +61,7 @@ function NavBar() {
                 </div>
                 <div className={`menu ${burgerActive ? 'is-active' : ''}`} id="menu">
                     <ul className="menu-inner">
-                        <Link to="/" className="menu-link">
+                        <Link to="/about" className="menu-link">
                             <li className="menu-item">
                                 About
                                 <span className="wiggle"></span>
