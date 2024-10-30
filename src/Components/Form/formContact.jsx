@@ -85,7 +85,7 @@ const FormContact = () => {
 
             <div className='form-c'>
                 <div className="location">
-                    <div >
+                    <div>
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.041939819465!2d88.39946977507559!3d22.50260957954158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0273fb5271a57f%3A0x536757469ececd6e!2sKidZee%20Madurdaha!5e0!3m2!1sen!2sin!4v1729701561222!5m2!1sen!2sin"
                             width="600"
