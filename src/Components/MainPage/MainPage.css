@@ -1,165 +1,137 @@
-
 .main-page {
     position: relative;
-    background-image: url('https://indiaeducationdiary.in/wp-content/uploads/2022/08/University-of-Greenwich.jpg');
+    background-image: url('https://images4.alphacoders.com/705/thumb-1920-705943.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 800px;
+    height: 700px;
     width: 100%;
-   
-  }
-  
-  .main-page::before {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-page::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(15, 32, 98, 0.5);
+    background-color: rgba(0, 9, 52, 0.5);
     z-index: 1;
-  }
+}
 
-  .main-text{
-    padding-top: 19rem;
-  }
-  .main-head{
-   text-align: center;
-color: white;
-font-size: 4.5rem;
-font-weight: 4rem;
-position: relative;
-  z-index: 2;
-  }
-
-  .main-subhead{
-text-align: center;
-color: white;
-font-weight: 3rem;
-font-size: 2rem;
-position: relative;
-  z-index: 2;
-  padding-top: 1rem;
-  }
-
-
-  .main-heading {
+.main-text {
     display: flex;
     flex-direction: column;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-}
-.heading {
-    display: flex;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 2;
+    opacity: 0; /* Hidden by default */
+    animation: fadeInUp 1.5s ease forwards; /* Trigger fade-in animation */
 }
 
-.heading-text{
-    font-family: "Raleway", sans-serif;
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Start slightly lower */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Reset to original position */
+    }
+}
+
+.main-head {
+    color: white;
+    font-size: 4.5rem;
+    font-weight: bold;
+    font-family: "Merriweather", serif;
+    text-align: center;
+}
+
+.main-subhead {
+    color: white;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    font-family: "Merriweather", serif;
+}
+
+/* Keyframes for the scroll animation */
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Start slightly lower */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End at the original position */
+    }
+}
+
+/* Heading styles */
+.heading-text {
+    font-family: "Merriweather", serif;
     font-size: 3rem;
-    color: #21386D;
-   padding-left: 80px;
+    color: rgb(58, 58, 58);
+    padding-left: 70px;
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Start slightly lower */
+    transition: opacity 0.8s ease, transform 0.8s ease; /* Transition for smooth effect */
+}
+
+.heading-text.visible {
+    opacity: 1; /* Show the element */
+    transform: translateY(0); /* Reset to original position */
 }
 
 .catchy-text {
-    color: #981B1E;
-
+    color: #0029CF;
 }
 
-.sub-heading {
-    font-family: "Raleway", sans-serif;
-    font-size: 1rem;
-   padding-left: 80px;
-}
-/* carousel */
-
-.carousel-img {
-    width: auto;
-    /* Default size */
-    height: 900px;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    /* background-color: rgba(0, 0, 0, 0.5);  */
-    border-radius: 50%;
-    /* Makes controls circular */
-    width: 40px;
-    height: 40px;
-    transition: transform 0.4s ease;
-}
-
-.carousel-control-prev-icon:hover,
-.carousel-control-next-icon:hover {
-    /* background-color: rgba(16, 16, 16, 0.8);  */
-    transform: scale(1.12);
-}
-
-.carousel-control-prev {
-    width: 60px;
-    height: 60px;
-}
-
-.carousel-control-next {
-    width: 60px;
-    height: 60px;
-
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.carousel-control-prev:focus,
-.carousel-control-next:focus {
-    outline: none;
-    /* Removes the outline from the control buttons */
-}
-
-/* Slide-specific Styling */
-.slide-one {
-    filter: brightness(90%);
-    /* Makes the first slide slightly darker */
-}
-
-.slide-two {
-    filter: sepia(20%);
-    /* Gives a sepia tone to the second slide */
-}
-
-.slide-three {
-    filter: contrast(120%);
-    /* Increases contrast on the third slide */
-}
-
-
-
-/* Media Queries for Responsiveness */
-@media (max-width: 810px) {
-    .heading img {
-        width: 100px;
-        /* Adjusted size for 810px */
-        height: auto;
-    }
-}
-
+/* Responsive Styles */
 @media (max-width: 768px) {
-    .heading img {
-        width: 100px;
-        /* Adjusted size for tablets */
-        height: auto;
-        margin-top: 1rem;
+    .main-page {
+        height: 500px; /* Adjust height for tablet screens */
+     
+    }
+
+    .main-head {
+        font-size: 2rem; /* Adjust heading font size */
+    }
+
+    .main-subhead {
+        font-size: 1rem; /* Adjust subheading font size */
+    }
+
+    .heading-text {
+        font-size: 1.3rem; /* Adjust heading text size */
+        padding-left: 20px; /* Adjust padding for smaller screens */
     }
 }
 
-@media (max-width: 480px) {
-    .heading img {
-        width: 80px;
-        /* Adjusted size for mobile */
-        height: auto;
+@media (max-width: 430px) { /* For iPhone 14 Pro Max and similar devices */
+    .main-page {
+        height: 450px; /* Adjust height for mobile screens */
+    }
+
+    .main-head {
+        font-size: 2rem; /* Adjust heading font size */
+        text-align: center;
+    }
+
+    .main-subhead {
+        font-size: 1rem; /* Adjust subheading font size */
+        text-align: center;
+    }
+
+    .heading-text {
+        font-size: 1.3rem; /* Adjust heading text size */
+        padding-left: 10px;
+        text-align: center;
     }
 }

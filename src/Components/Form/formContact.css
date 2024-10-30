@@ -19,8 +19,19 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(33, 57, 151, 0.5);
+  background-color: rgba(0, 7, 38, 0.5);
   z-index: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* Start transparent */
+    transform: translateY(20px); /* Optional: add a little slide up effect */
+  }
+  100% {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* End at the original position */
+  }
 }
 
 .element h1 {
@@ -30,7 +41,11 @@
   text-align: center;
   padding-top: 11rem;
   font-size: 4rem;
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+  animation: fadeIn 1s ease forwards; /* Apply fadeIn animation */
 }
+
 
 .form-c {
   display: flex;
@@ -51,12 +66,12 @@
 h2 {
   text-align: center;
   font-size: 2.5rem;
-  font-family: 'Arial', sans-serif;
+  font-family: "Merriweather", serif;
   /* color: #333; */
   margin-bottom: 2rem;
   margin-top: 10px;
   font-weight: bold;
-  color: #21386D;
+  color: rgb(58, 58, 58);
 }
 
 .form-group {
@@ -102,9 +117,9 @@ select:focus {
 }
 
 .submit-button {
-  width: 100%;
+  width: 30%;
   padding: 10px;
-  background-color: #981B1E;
+  background-color: #0029CF;
   color: white;
   border: none;
   border-radius: 4px;
@@ -114,10 +129,11 @@ select:focus {
   font-size: 16px;
   margin-top: 1.8rem;
   margin-bottom: 1rem;
+ 
 }
 
 .submit-button:hover {
-  background-color: #21386D;
+  background-color: #3c5bd7;
 }
 
 .success-message {
@@ -163,12 +179,12 @@ select:focus {
 
 .social i {
   font-size: 30px;
-  color: #21386D;
+  color:rgb(58, 58, 58) ;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .social i:hover {
-  color: #981B1E;
+  color: #0029CF;
   transform: scale(1.2);
 }
 
@@ -187,6 +203,7 @@ select:focus {
 
   h2 {
       font-size: 2rem; /* Adjust heading size */
+   
   }
 
   .element h1 {

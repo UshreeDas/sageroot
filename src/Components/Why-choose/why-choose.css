@@ -1,4 +1,8 @@
 
+.why-choose-us{
+  margin-top: 4rem;
+}
+
 .why-choose {
   padding: 50px 0;
   text-align: center;
@@ -21,19 +25,35 @@
   cursor: pointer;
 }
 
+.why-choose-content {
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px); /* Slightly lower */
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+  cursor: pointer;
+}
+
+/* Fade-in animation when the element comes into view */
+.scroll-in {
+  opacity: 1;
+  transform: translateY(0); /* Slide up to original position */
+}
+
 .why-choose-content:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
 
+
+
+
 .why-choose-img {
   margin-bottom: 8px;
 }
 
 .choose-img {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   object-fit: contain;
 }
 
