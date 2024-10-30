@@ -1,5 +1,7 @@
-.university-section {
+.university-container{
     margin-top: 6rem;
+}
+.university-section {
     display: flex;
     justify-content: center;
     align-items: center;

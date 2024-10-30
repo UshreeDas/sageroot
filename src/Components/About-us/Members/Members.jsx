@@ -31,7 +31,7 @@ function Members() {
                 <div className="profile">
                     <figure data-value="Operational manager UK">
                         <img
-                            src="https://github.com/DMMPrice/sageroot-images/blob/master/partners/ARGHYA%20BISWAS.jpeg?raw=true"
+                            src="./partners/ARGHYA BISWAS.jpeg"
                             alt=""/>
                         <figcaption>arghya biswas</figcaption>
                     </figure>
@@ -40,7 +40,7 @@ function Members() {
                 <div className="profile">
                     <figure data-value="Operational manager London">
                         <img
-                            src="https://github.com/DMMPrice/sageroot-images/blob/master/partners/Hari%20Vardhan%20Murusu.jpeg?raw=true"
+                            src="./partners/Hari Vardhan Murusu.jpeg"
                             alt=""/>
                         <figcaption>Hari Vardhan Murusu</figcaption>
                     </figure>

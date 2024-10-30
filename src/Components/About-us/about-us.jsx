@@ -14,7 +14,7 @@ function About() {
             </div>
             <div className="about-content">
                 <div className="about-content-left">
-                    <img src="https://github.com/DMMPrice/sageroot-images/blob/master/partners/About-Us.jpg?raw=true"/>
+                    <img src="./partners/About-Us.jpg"/>
                 </div>
                 <div className="about-content-right">
                     <h4>Our Mission</h4>

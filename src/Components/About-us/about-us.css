@@ -7,7 +7,7 @@
 
 .about-hero {
     position: relative;
-    background-image: url("https://raw.githubusercontent.com/DMMPrice/sageroot-images/refs/heads/master/partners/about-us-hero.webp");
+    background-image: url("/public/partners/about-us-hero.webp");
     background-size: cover;
     background-position: center;
     height: 50vh;
