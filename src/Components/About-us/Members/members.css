@@ -1,0 +1,118 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.members-container {
+    margin-top: 4rem;
+    opacity: 0; /* Start with the container hidden */
+    transition: opacity 3s ease-in-out;
+}
+
+.members-container.fade-in {
+    opacity: 1; /* Fade in when the class is added */
+}
+
+.members-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    row-gap: 70px;
+    padding: 0 160px;
+}
+
+.members-content-main-title {
+    font-size: 67px;
+    line-height: 1.1;
+    font-weight: 700;
+    margin: 0px 0px 20px;
+    color: black;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.profile figure {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.profile figure img {
+    width: 80%;
+}
+
+.profile figure figcaption {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 12px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.profile figure::after {
+    content: attr(data-value);
+    width: 100%;
+    transform-origin: 0 0;
+    transform: rotate(90deg);
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 12px;
+    right: -92%;
+}
+
+.profile:nth-child(2) {
+    margin-top: 70px;
+}
+
+@media (max-width: 430px) {
+    .members-container{
+        margin-top: 1rem;
+    }
+    .members-content-main-title p {
+        text-align: center;
+    }
+
+    .profile figure {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .profile {
+        margin-top: 20px;
+    }
+
+    .profile:nth-child(2) {
+        margin-top: 20px;
+    }
+
+    .members-content {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+        row-gap: 50px;
+    }
+
+    .profile figure img {
+        width: 100%;
+    }
+
+    .profile figure::after {
+        right: -100%;
+    }
+
+    .profile figure figcaption {
+        font-size: 2rem;
+        text-align: center;
+        font-weight: 500;
+    }
+
+}

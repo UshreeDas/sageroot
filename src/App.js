@@ -1,34 +1,54 @@
-import React,{useEffect} from "react";
-import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
-import NavBar from "./Components/Navbar/NavBar";
+import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
+
 import Main from "./Components/MainPage/Main";
 import Footer from "./Components/Footer/footer";
 import UniversitySection from "./Components/University-section/university-section";
-import './App.css';
 import FormContact from "./Components/Form/formContact";
+import About from "./Components/About-us/about-us";
+import Loading from "./Components/Loading/loading";
+import NavBar from "./Components/Navbar/NavBar";
 
+import './App.css';
 
 function App() {
+    const [loading, setLoading] = useState(true);
+    const location = useLocation();
+
     useEffect(() => {
-        document.body.classList.add('no-scrollbar');
-        return () => {
-            document.body.classList.remove('no-scrollbar');
-        };
-    }, []);
+        setLoading(true);
+        const timer = setTimeout(() => {
+            setLoading(false);
+        }, 2000); // Adjust the delay as needed
+
+        return () => clearTimeout(timer);
+    }, [location]);
+
+    return (
+        <div className="app-container">
+            {loading && <Loading />}
+            {!loading && (
+                <>
+                    <NavBar />
+                    <Routes>
+                        <Route path="/" element={<Main />} />
+                        <Route path="/university" element={<UniversitySection />} />
+                        <Route path="/contact" element={<FormContact />} />
+                        <Route path="/about" element={<About />} />
+                    </Routes>
+                    <Footer />
+                </>
+            )}
+        </div>
+    );
+}
+
+function AppWrapper() {
     return (
         <Router>
-            <div className="app-container">
-                <NavBar/>
-                <Routes>
-                    <Route path="/" element={<Main/>}/>
-                    <Route path="/university" element={<UniversitySection/>}/>
-                    <Route path="/" element={<Main />} />
-                    <Route path="/contact" element={<FormContact/>} />
-                </Routes>
-                <Footer />
-            </div>
+            <App />
         </Router>
     );
 }
 
-export default App;
+export default AppWrapper;
