@@ -12,16 +12,18 @@
     line-height: 1.1;
     font-weight: 700;
     text-align: center;
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Merriweather", serif;
+    color: rgb(58, 58, 58);
   }
 
   .bi-quote {
     font-size: 4rem;
-    color: #000000;
+    color: rgb(58, 58, 58);
   }
   /* Hover effect */
   .bi-quote:hover {
-    color: #535151;
+    color: #676767;
     transform: scale(1.05);
     transition: transform 0.4s ease, color 0.4s ease;
   }
