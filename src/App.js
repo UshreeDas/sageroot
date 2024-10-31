@@ -19,7 +19,7 @@ function App() {
         setLoading(true);
         const timer = setTimeout(() => {
             setLoading(false);
-        }, 2000); // Adjust the delay as needed
+        }, 1500); // Adjust the delay as needed
 
         return () => clearTimeout(timer);
     }, [location]);

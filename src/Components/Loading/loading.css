@@ -14,7 +14,7 @@
 .loading-image {
     width: 200px;
     height: 200px;
-    animation: spin 3s ease-in-out alternate;
+    animation: spin 2s ease-in-out alternate;
 }
 
 @keyframes spin {
