@@ -1,6 +1,24 @@
-.university-container{
+.university-container {
     margin-top: 6rem;
 }
+
+.view-more-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Increase font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.view-more-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
 .university-section {
     display: flex;
     justify-content: center;
@@ -65,4 +83,16 @@
 .university-card h3 {
     font-size: 1.2rem;
     margin: 0;
+}
+
+@media (max-width: 430px) {
+    .university-list-container {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .university-list-main {
+        justify-content: center;
+
+    }
 }
