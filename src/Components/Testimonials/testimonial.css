@@ -1,20 +1,41 @@
-.testimonial-feedback {
-  display: flex;
-  flex-direction: row;
-  justify-items: center;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px;
-  padding-left: 5rem;
-  padding-right: 5rem;
+@keyframes fadeInSlideUp {
+  0% {
+    opacity: 0; /* Start transparent */
+    transform: translateY(20px); /* Start slightly lower */
+  }
+  100% {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* End at the original position */
+  }
 }
 
+/* Heading styles */
+.testimonial-feedback {
+    font-family: "Merriweather", serif;
+    font-size: 3rem;
+    color: #232323;
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Start slightly lower */
+    transition: opacity 0.8s ease, transform 0.8s ease; /* Transition for smooth effect */
+}
+
+.testimonial-feedback.visible {
+    opacity: 1; /* Show the element */
+    transform: translateY(0); /* Reset to original position */
+}
+
+.testimonial-feedback{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 /* Container for the testimonials */
 .testimonial-data {
-  width: 40%;
+  width: 85%;
   margin: 0 auto;
   padding: 20px 0;
 }
+
+
 
 /* Styling for each testimonial card */
 .testimonial-card {
@@ -45,22 +66,24 @@
 /* Client name styling */
 .name-client {
   font-weight: bold;
-  font-size: 1.2rem;
-  color: #981B1E;
-  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #302f2f;
+  margin-top: 1rem;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 /* University name styling */
 .name-university {
   font-size: 14px;
-  color: #666;
+  color: #0029CF;
   display: block;
   margin-bottom: 10px;
+  
 }
 
 /* Review text styling */
 .reviews {
-  font-size: 16px;
+  font-size: 12px;
   color: #555;
   font-style: italic;
   margin-bottom: 15px;
@@ -70,11 +93,12 @@
 /* Course name styling */
 .name-course {
   margin-top: 20px;
-  background-color: #D06A6A;
+  background-color: rgb(80, 77, 77);
   color: white;
   padding: 8px;
   border-radius: 10px;
-  border: 1px solid color#981B1E;
+  border: 1px solid color#21386D;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 /* Slick Slider adjustments */
@@ -82,86 +106,3 @@
   padding: 0 10px;
 }
 
-/* Responsive styles */
-
-/* Tablets (max-width: 768px) */
-@media only screen and (max-width: 768px) {
-  .testimonial-feedback {
-    flex-direction: column;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    gap: 20px;
-  }
-
-  .testimonial-data {
-    width: 70%;
-    padding: 15px 0;
-  }
-
-  .testimonial-card {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    padding: 15px;
-  }
-
-  .testimonial-img img {
-    width: 110px;
-    height: 110px;
-    margin-top: -3.5rem;
-  }
-
-  .name-client {
-    font-size: 1.15rem;
-  }
-
-  .name-university, .reviews {
-    font-size: 14px;
-  }
-
-  .name-course {
-    font-size: 15px;
-    padding: 6px;
-    margin-top: 18px;
-  }
-}
-
-/* Phones (max-width: 430px) */
-@media only screen and (max-width: 430px) {
-  .testimonial-feedback {
-    flex-direction: column;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    gap: 20px;
-  }
-
-  .testimonial-data {
-    width: 90%;
-    padding: 10px 0;
-  }
-
-  .testimonial-card {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    padding: 15px;
-  }
-
-  .testimonial-img img {
-    width: 100px;
-    height: 100px;
-    margin-top: -3rem;
-  }
-
-  .name-client {
-    font-size: 1.1rem;
-  }
-
-  .name-university, .reviews {
-    font-size: 13px;
-  }
-
-  .name-course {
-    font-size: 14px;
-    padding: 6px;
-    margin-top: 15px;
-  }
-}
