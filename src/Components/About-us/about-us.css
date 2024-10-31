@@ -5,6 +5,24 @@
     gap: 10px;
 }
 
+.abt-text {
+    opacity: 0; /* Start hidden */
+    animation: fadeIn 1s ease-in forwards; /* Apply fade-in animation */
+}
+
+/* Define the keyframes for the fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start completely transparent */
+        transform: translateY(20px); /* Start slightly below */
+    }
+    to {
+        opacity: 1; /* End fully visible */
+        transform: translateY(0); /* Move to original position */
+    }
+}
+
+
 .about-hero {
     position: relative;
     background-image: url("/public/partners/about-us-hero.webp");
@@ -86,15 +104,15 @@
     width: 50%;
 }
 
-.about-content-right h4 {
+/* .about-content-right h4 {
     font-size: 6rem;
     line-height: 1.1;
     font-weight: 700;
     text-align: center;
     font-family: "Open Sans", sans-serif;
-}
+} */
 
-.about-content-right p {
+.mission-para {
     font-size: 1.5rem;
     padding-top: 40px;
     line-height: 2rem;
@@ -128,12 +146,7 @@
     .about-content-right {
         width: 100%;
     }
-
-    .about-content-right h4 {
-        font-size: 4rem;
-    }
-
-    .about-content-right p {
-        font-size: 1.7rem;
+.mission-para {
+        font-size: 1.5rem;
     }
 }

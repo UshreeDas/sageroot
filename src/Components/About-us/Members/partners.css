@@ -1,0 +1,93 @@
+.partners-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+
+.partners-data {
+    /* width: 85%; */
+    width: 45%;
+    /* margin: 0 auto; */
+  }
+  
+  /* Styling for each testimonial card */
+  .partners-card {
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensures content stays within the rounded corners */
+    text-align: center;
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+    padding: 20px;
+    max-width: 350px; /* Set a fixed width if needed */
+    /* margin: 20px; */
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    border: 0.1px solid #ebeaea;
+}
+
+/* Hover effect for subtle scaling and shadow */
+.partners-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px  10px rgba(0, 0, 0, 0.2);
+}
+
+.partners-img {
+    width: 100%;
+    border-bottom: 1px solid #e1e0e0; /* Thin border for separation */
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+/* Style the image */
+.partners-img img {
+    width: 200px; /* Control image size */
+    height: 200px;
+    border-radius: 50%; /* Circular image */
+    object-fit: cover;
+}
+
+/* Partner information styling */
+.partners-info {
+    color: #333; /* Text color */
+}
+
+.partners-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0 5px;
+}
+
+.partners-post {
+    font-size: 0.9em;
+    color:#0029CF ;
+}
+
+.slick-slider .slick-slide {
+    padding: 0 10px;
+  }
+
+  @media (max-width: 1300px) {
+    .partners-container {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .partners-data {
+        width: 70%;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+      }
+      .partners-card{
+        margin-top: 0.4rem;
+      }
+
+  }
