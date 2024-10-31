@@ -9,8 +9,10 @@ function UniversitySection() {
     return (
         <div className="university-container">
             <div className='about-hero'>
+            <div className="abt-text">
                 <h4><strong>Connected University</strong></h4>
                 <p>Home > Connected University</p>
+                </div>
             </div>
             <div className="university-section">
                 <nav>

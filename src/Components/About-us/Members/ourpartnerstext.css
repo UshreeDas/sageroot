@@ -1,16 +1,18 @@
-.text {
+.ourpartnerstext-container{
     display: flex;
     flex-direction: column;
-     justify-content: center;
-    align-items: center; 
-    color: #21386D;
-  }
+    align-items: center;
+    justify-content: center;
+   
+}
 
-  .client-feedback {
-    font-size: 3.5rem;
-    font-weight: 20rem;
-    font-family: "Merriweather", serif;
+
+  .our-partners-text {
+    font-size: 5rem;
+    line-height: 1.1;
+    font-weight: 700;
     text-align: center;
+    font-family: "Open Sans", sans-serif;
   }
 
   .bi-quote {
@@ -19,14 +21,13 @@
   }
   /* Hover effect */
   .bi-quote:hover {
-    color: #6f6f6f;
+    color: #535151;
     transform: scale(1.05);
     transition: transform 0.4s ease, color 0.4s ease;
   }
 
   .quote-icon.one {
-    display: inline-block;
-    color: #333;
+    /* display: inline-block; */
     transition: transform 0.7s ease;
   }
   
@@ -35,7 +36,7 @@
   }
   
   .quote-icon.two {
-    display: inline-block;
+    /* display: inline-block; */
     color: #333;
     transition: transform 0.7s ease;
     transform: rotate(-180deg);
@@ -45,8 +46,16 @@
     transform: scale(1.2) rotate(-180deg);
   }
 
-  @media (max-width: 950px) {
-    .text {
-        display: none; /* Hides HereFrom on screens less than 430px wide */
+  @media (max-width:1300px) {
+     .bi-quote{
+        display: none;
     }
+
+    .our-partners-text {
+        font-size: 4rem;
+        line-height: 1.1;
+        font-weight: 700;
+        text-align: center;
+        font-family: "Open Sans", sans-serif;
+      }
   }
