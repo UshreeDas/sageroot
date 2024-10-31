@@ -1,41 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
 
-
-:root {
-    --color-white-100: hsl(206, 5%, 100%);
-    --color-white-200: hsl(206, 5%, 90%);
-    --color-white-300: hsl(206, 5%, 80%);
-    --color-white-400: hsl(206, 5%, 65%);
-    --color-white-500: hsl(206, 5%, 50%);
-
-    --color-black-100: hsl(213, 20%, 10%);
-    --color-black-200: hsl(213, 23%, 8%);
-    --color-black-300: hsl(214, 21%, 6%);
-    --color-black-400: hsl(210, 21%, 6%);
-    --color-black-500: hsl(216, 22%, 4%);
-    --color-black-600: hsl(220, 18%, 3%);
-    --color-black-700: hsl(220, 27%, 2%);
-    --color-black-800: hsl(180, 20%, 1%);
-
-    --color-blue-100: hsl(214, 95%, 93%);
-    --color-blue-200: hsl(213, 97%, 87%);
-    --color-blue-300: hsl(212, 96%, 78%);
-    --color-blue-400: hsl(213, 94%, 68%);
-    --color-blue-500: hsl(217, 91%, 60%);
-    --color-blue-600: hsl(221, 83%, 53%);
-    --color-blue-700: hsl(224, 76%, 48%);
-    --color-blue-800: hsl(226, 71%, 40%);
-    --color-blue-900: hsl(224, 64%, 33%);
-    --color-3: #21386D;
-
-    --shadow-small: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 2px 0 rgba(0, 0, 0, 0.06);
-    --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    --shadow-large: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05);
-}
-
 .nav-brand {
     align-content: center;
     justify-content: center;
@@ -104,7 +68,7 @@
 .btn {
     display: inline-block !important;
     text-decoration: none !important;
-    background: #981B1E !important;
+    background: transparent;
     font-size: 18px !important;
     font-weight: 400 !important;
     padding: 13px 35px 12px !important;
@@ -119,7 +83,7 @@
 }
 
 .btn:hover {
-    color: #fff;
+    color: #0029CF;
 }
 
 .btn:hover::before {
@@ -143,7 +107,7 @@
     clip-path: polygon(0 1, 0% 100%, 101% 100%);
     transform: scale(0);
     transform-origin: bottom left;
-    background: var(--color-3);
+    background: #ffff;
     pointer-events: none;
     transition: .5s;
     z-index: -1;
@@ -162,7 +126,7 @@
     clip-path: polygon(0 1, 101% 0%, 100% 100%);
     transform: scale(0);
     transform-origin: top right;
-    background: var(--color-3);
+    background: #ffffff;
     pointer-events: none;
     transition: .5s;
     opacity: .5;
@@ -191,12 +155,12 @@
 }
 
 .header.on-scroll {
-    background: #000000b3;
+    background: transparent;
     box-shadow: var(--shadow-medium);
 }
 
 .header.on-scroll .menu-item {
-    color: #fff;
+    color: #0029CF;
 }
 
 
@@ -250,10 +214,12 @@
     line-height: 1.5;
     text-transform: uppercase;
     transition: all 0.3s ease;
-    color: #21386D;
+    color: #ffffff;
 }
+
 .menu-link:hover {
-    color: #981B1E;
+    color: #0029CF;
+    text-decoration: none;
 }
 
 .btn.nav-btn {
@@ -261,9 +227,19 @@
 }
 
 .on-scroll .btn.nav-btn {
+    color: #0029CF;
+}
+
+.on-scroll .btn.nav-btn:hover {
     color: #ffffff;
 }
 
+.on-scroll .btn::before{
+    background: #0029CF;
+}
+.on-scroll .btn::after{
+    background: #0029CF;
+}
 @media only screen and (min-width: 48rem) {
     .menu {
         position: relative;

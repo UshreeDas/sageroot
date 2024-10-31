@@ -27,7 +27,7 @@ function NavBar() {
         });
 
         const handleScroll = () => {
-            if (window.scrollY >= 85) {
+            if (window.scrollY >= 800) {
                 setScrolling(true);
             } else {
                 setScrolling(false);
@@ -51,7 +51,7 @@ function NavBar() {
         <header className={`header ${scrolling ? 'on-scroll' : ''}`} id="header">
             <nav className="navbar container">
                 <Link to="/">
-                    <img src={scrolling ? "./Logo(Normal).svg" : "./Logo(Light).svg"}
+                    <img src={scrolling ? "./Logo(Light).svg" : "./Logo(Normal).svg"}
                          alt="" className="nav-brand"/>
                 </Link>
                 <div className={`burger ${burgerActive ? 'is-active' : ''}`} id="burger">
@@ -63,19 +63,19 @@ function NavBar() {
                     <ul className="menu-inner">
                         <Link to="/about" className="menu-link">
                             <li className="menu-item">
-                                About
+                                About Partners
                                 <span className="wiggle"></span>
                             </li>
                         </Link>
                         <Link to="/" className="menu-link">
                             <li className="menu-item">
-                                Programs Offered
+                                How to apply
                                 <span className="wiggle"></span>
                             </li>
                         </Link>
                         <Link to="/university" className="menu-link">
                             <li className="menu-item">
-                                Connected University
+                                University Partners
                                 <span className="wiggle"></span>
                             </li>
                         </Link>
