@@ -155,7 +155,7 @@
 }
 
 .header.on-scroll {
-    background: transparent;
+    background: rgba(155, 151, 151, 0.55);
     box-shadow: var(--shadow-medium);
 }
 
