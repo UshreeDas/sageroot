@@ -1,4 +1,4 @@
-@keyframes fadeIn {
+/* @keyframes fadeIn {
     from {
         opacity: 0;
     }
@@ -9,12 +9,12 @@
 
 .members-container {
     margin-top: 4rem;
-    opacity: 0; /* Start with the container hidden */
+    opacity: 0; 
     transition: opacity 3s ease-in-out;
 }
 
 .members-container.fade-in {
-    opacity: 1; /* Fade in when the class is added */
+    opacity: 1; 
 }
 
 .members-content {
@@ -115,4 +115,18 @@
         font-weight: 500;
     }
 
+} */
+
+.members-container {
+    opacity: 0;
+    transform: translateY(20px); /* Start with a slight vertical offset */
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    margin-top: 1rem;
 }
+
+/* When the element is in view, add this class to trigger the animation */
+.members-container.show {
+    opacity: 1;
+    transform: translateY(0); /* Move to its original position */
+}
+
