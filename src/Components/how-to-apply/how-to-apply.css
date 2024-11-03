@@ -66,3 +66,15 @@
     break-inside: avoid;
     padding: 0.5rem 0;
 }
+
+.apply-conclusion-last-text {
+    font-size: 2rem;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    font-weight: 400;
+    color: #333;
+}
+
+.apply-conclusion-last-text strong{
+    text-decoration: underline #555555;
+}

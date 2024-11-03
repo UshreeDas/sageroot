@@ -51,6 +51,7 @@ function HowToApply() {
                     <li>Internship letter</li>
                     <li>Other Qualification</li>
                 </ul>
+                <div className="apply-conclusion-last-text">Mail the documents at <strong>info.sageroots@gmail.com</strong></div>
             </div>
         </div>
     );
