@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import './formContact.css'; // Import the CSS file
+import './formContact.css';
 import Swal from 'sweetalert2';
 import emailjs from 'emailjs-com';
 
