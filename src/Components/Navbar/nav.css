@@ -8,7 +8,7 @@ body {
 }
 
 .nav {
-    background-color: #fef7e5;
+    background-color: #ffffff;
    position: fixed;
     width: 100%;
     z-index: 1000;
@@ -45,17 +45,23 @@ body {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
+  gap: 30px;
 }
 
-.nav-elements ul li:not(:last-child) {
+/* .nav-elements ul li:not(:last-child) {
   margin-right: 60px;
-}
+} */
 
 .nav-elements ul a {
   font-size: 16px;
   font-weight: 400;
-  color: #2f234f;
+  color: #0029CF;
   text-decoration: none;
+  transition: transform 0.7s ease;
+}
+.nav-elements ul a:hover {
+  color: #574c4c;
+  transform: scale(1.2);
 }
 
 .nav-elements ul a.active {
@@ -92,9 +98,9 @@ body {
 }
 
 @media (max-width: 768px) {
-  .nav-elements ul li:not(:last-child) {
-    margin-right: 30px;
-  }
+  /* .nav-elements ul li:not(:last-child) {
+    margin-right: none;
+  } */
 }
 
 @media (max-width: 600px) {
@@ -126,7 +132,7 @@ body {
 
   .nav-elements ul li {
     margin-right: unset;
-    margin-top: 22px;
+    /* margin-top: 22px; */
   }
 }
 
