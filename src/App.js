@@ -8,6 +8,7 @@ import FormContact from "./Components/Form/formContact";
 import About from "./Components/About-us/about-us";
 import Loading from "./Components/Loading/loading";
 import NavBar from "./Components/Navbar/NavBar";
+import HowToApply from "./Components/how-to-apply/how-to-apply";
 
 import './App.css';
 
@@ -35,6 +36,7 @@ function App() {
                         <Route path="/university" element={<UniversitySection />} />
                         <Route path="/contact" element={<FormContact />} />
                         <Route path="/about" element={<About />} />
+                        <Route path="/apply" element={<HowToApply />} />
                     </Routes>
                     <Footer />
                 </>

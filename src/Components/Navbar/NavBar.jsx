@@ -67,7 +67,7 @@ function NavBar() {
                                 <span className="wiggle"></span>
                             </li>
                         </Link>
-                        <Link to="/" className="menu-link">
+                        <Link to="/apply" className="menu-link">
                             <li className="menu-item">
                                 How to apply
                                 <span className="wiggle"></span>
