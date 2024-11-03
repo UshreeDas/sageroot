@@ -20,7 +20,7 @@ function About() {
                 </div>
                 
                 <div className="about-content-right">
-                    <Ourmissiontext/>
+                    <Ourmissiontext title="Our Mission"/>
                     <p className="mission-para">Our mission is to provide the best education for our students. We
                         believe that education is the key to a successful future. We are
                         committed to providing the best education possible to our students.

@@ -1,0 +1,80 @@
+.apply-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+    margin-bottom: 50px;
+}
+
+.apply-body {
+    margin-top: 3rem;
+    margin-left: 3rem;
+    margin-right: 2rem;
+    overflow: hidden; /* Ensures the image stays within the container */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.apply-conclusion {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.apply-conclusion h3 {
+    font-size: 1.5rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.apply-conclusion ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.apply-conclusion li {
+    font-size: 1rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.apply-conclusion p {
+    margin-left: 1rem;
+    font-size: 5rem;
+}
+
+.apply-conclusion-ul-point {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    column-gap: 2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    margin-left: 6rem;
+    font-size: 2.5rem;
+}
+
+.apply-conclusion-ul-point li {
+    break-inside: avoid;
+    padding: 0.5rem 0;
+}
+
+.apply-conclusion-last-text {
+    font-size: 2rem;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    font-weight: 400;
+    color: #333;
+}
+
+.apply-conclusion-last-text strong{
+    text-decoration: underline #555555;
+}

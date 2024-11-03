@@ -6,6 +6,9 @@ import UniversitySection from "./Components/University-section/university-sectio
 import FormContact from "./Components/Form/formContact";
 import About from "./Components/About-us/about-us";
 import Loading from "./Components/Loading/loading";
+import NavBar from "./Components/Navbar/NavBar";
+import HowToApply from "./Components/how-to-apply/how-to-apply";
+
 // import NavBar from "./Components/Navbar/NavBar";
 import Navbar from "./Components/Navbar/Nav";
 import './App.css';
@@ -29,12 +32,12 @@ function App() {
             {!loading && (
                 <>  
                   <Navbar />
-                    {/* <NavBar /> */}
                     <Routes>
                         <Route path="/" element={<Main />} />
                         <Route path="/university" element={<UniversitySection />} />
                         <Route path="/contact" element={<FormContact />} />
                         <Route path="/about" element={<About />} />
+                        <Route path="/apply" element={<HowToApply />} />
                     </Routes>
                     <Footer />
                       
