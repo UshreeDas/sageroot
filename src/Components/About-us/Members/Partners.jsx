@@ -64,9 +64,9 @@ const data = [
     },
         
     {
-        name: "Hari Vardhan Murusu",
+        name: "Manoj Kumar",
         post: "Operational manager London",
-        image: "./partners/Hari Vardhan Murusu.jpeg",
+        image: "./Manoj Kumar.jpg",
     },
     
 ]

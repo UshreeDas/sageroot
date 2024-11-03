@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
-
 import Main from "./Components/MainPage/Main";
 import Footer from "./Components/Footer/footer";
 import UniversitySection from "./Components/University-section/university-section";
 import FormContact from "./Components/Form/formContact";
 import About from "./Components/About-us/about-us";
 import Loading from "./Components/Loading/loading";
-import NavBar from "./Components/Navbar/NavBar";
-
+// import NavBar from "./Components/Navbar/NavBar";
+import Navbar from "./Components/Navbar/Nav";
 import './App.css';
 
 function App() {
@@ -28,8 +27,9 @@ function App() {
         <div className="app-container">
             {loading && <Loading />}
             {!loading && (
-                <>
-                    <NavBar />
+                <>  
+                  <Navbar />
+                    {/* <NavBar /> */}
                     <Routes>
                         <Route path="/" element={<Main />} />
                         <Route path="/university" element={<UniversitySection />} />
@@ -37,6 +37,7 @@ function App() {
                         <Route path="/about" element={<About />} />
                     </Routes>
                     <Footer />
+                      
                 </>
             )}
         </div>
