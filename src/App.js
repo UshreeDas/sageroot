@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
-
 import Main from "./Components/MainPage/Main";
 import Footer from "./Components/Footer/footer";
 import UniversitySection from "./Components/University-section/university-section";
@@ -10,6 +9,8 @@ import Loading from "./Components/Loading/loading";
 import NavBar from "./Components/Navbar/NavBar";
 import HowToApply from "./Components/how-to-apply/how-to-apply";
 
+// import NavBar from "./Components/Navbar/NavBar";
+import Navbar from "./Components/Navbar/Nav";
 import './App.css';
 
 function App() {
@@ -29,8 +30,8 @@ function App() {
         <div className="app-container">
             {loading && <Loading />}
             {!loading && (
-                <>
-                    <NavBar />
+                <>  
+                  <Navbar />
                     <Routes>
                         <Route path="/" element={<Main />} />
                         <Route path="/university" element={<UniversitySection />} />
@@ -39,6 +40,7 @@ function App() {
                         <Route path="/apply" element={<HowToApply />} />
                     </Routes>
                     <Footer />
+                      
                 </>
             )}
         </div>

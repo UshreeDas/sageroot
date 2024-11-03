@@ -118,7 +118,15 @@ const data = [
         course: "MSc Pharmaceutical Sciences",
         image: "./chandrakanth kammari .jpg",
         review: "I am very happy with the service provided by the team. They helped me to get into the university of my choice and I am very grateful for that.",
+    },
+    {
+        name: "Hari Vardhan Murusu",
+        university: "East London university",
+        course: "MSc computing",
+        image: "./partners/Hari Vardhan Murusu.jpeg",
+        review: "I am very happy with the service provided by the team. They helped me to get into the university of my choice and I am very grateful for that.",
     }
+    
 ]
 
 export default Testimonial;
