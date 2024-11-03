@@ -14,7 +14,7 @@ const Navbar = () => {
         <nav className="nav">
             <div className="container">
                 <div className="logo">
-                    <img src="./Logo(Light).svg" className='nav-brand' alt="logo" />
+                    <img src="./SAGEROOTS INTERNATIONAL(Blue).svg" className='nav-brand' alt="logo" />
                 </div>
                 <div className="menu-icon" onClick={handleShowNavbar}>
                     <div class="burger " id="burger">
@@ -29,16 +29,16 @@ const Navbar = () => {
                             <NavLink to="/">Home</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/apply">How to apply</NavLink>
+                            <NavLink to="/apply">How to Apply</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/university">Universities</NavLink>
+                            <NavLink to="/university">University Partners</NavLink>
                         </li>
                         <li>
                             <NavLink to="/about">About Partners</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/contact">Contact</NavLink>
+                            <NavLink to="/contact">Contact Us</NavLink>
                         </li>
                     </ul>
                 </div>
