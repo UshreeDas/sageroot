@@ -7,16 +7,18 @@ function HowToApply() {
     return (
         <div className="apply-container">
             <div className='about-hero'>
-                <h4><strong>How to Apply</strong></h4>
-                <p>Home > How to Apply</p>
+                <div className="abt-text">
+                    <h4><strong>How to Apply</strong></h4>
+                    <p>Home > How to Apply</p>
+                </div>
             </div>
             <div className="apply-body">
                 <div className="about-content-left">
-                    <img src="/apply.jpg" alt="apply image"/>
+                    <img src="/apply.jpg" alt="apply image" />
                 </div>
 
                 <div className="about-content-right">
-                    <Ourmissiontext title={"How to Apply"}/>
+                    <Ourmissiontext title={"How to Apply"} />
                     <p className="mission-para">Our mission is to provide the best education for our students. We
                         believe that education is the key to a successful future. We are
                         committed to providing the best education possible to our students.
