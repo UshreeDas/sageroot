@@ -6,9 +6,7 @@ import UniversitySection from "./Components/University-section/university-sectio
 import FormContact from "./Components/Form/formContact";
 import About from "./Components/About-us/about-us";
 import Loading from "./Components/Loading/loading";
-import NavBar from "./Components/Navbar/NavBar";
 import HowToApply from "./Components/how-to-apply/how-to-apply";
-
 // import NavBar from "./Components/Navbar/NavBar";
 import Navbar from "./Components/Navbar/Nav";
 import './App.css';
