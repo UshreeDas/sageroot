@@ -78,7 +78,7 @@ const choose = [
   },
   {
     name: "Making sure you stay right, and stay well",
-    image: "./security warning.svg",
+    image: "./security warning (1).svg",
   },
   {
     name: "Courses starting at ₹8 Lakhs*",
