@@ -76,8 +76,6 @@ body {
   bottom: -4px;
   left: 0;
   width: 100%;
-  height: 2px;
-  background-color: #574c4c;
 }
 
 .burger {
@@ -97,6 +95,53 @@ body {
     transition: 0.35s ease;
 }
 
+.nav {
+  background-color: #ffffff;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  padding: 10px 0;
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+
+
+.nav.scrolled {
+  background-color: #0029cf; /* Dark background on scroll */
+  color: #ffffff; /* White text on scroll */
+}
+
+.nav .nav-brand {
+  transition: filter 0.5s ease;
+}
+
+.nav .nav-brand.scrolled {
+  filter: brightness(0) invert(1); /* Invert logo colors */
+}
+
+.nav-elements ul a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #0029cf;
+  text-decoration: none;
+  transition: transform 0.7s ease, color 0.5s ease;
+}
+
+.nav.scrolled .nav-elements ul a {
+  color: #ffffff; /* Change text color on scroll */
+}
+
+.burger-line {
+  background-color: #1b1b1c;
+  transition: background-color 0.5s ease;
+}
+
+.nav.scrolled .burger-line {
+  background-color: #ffffff; /* Change burger color on scroll */
+}
+
+
+
 @media (max-width: 768px) {
   /* .nav-elements ul li:not(:last-child) {
     margin-right: none;
@@ -113,7 +158,7 @@ body {
     position: absolute;
     right: 0;
     top: 60px;
-    background-color: #fef7e5;
+    background-color: #ffffff;
     width: 0px;
     height: calc(100vh - 60px);
     transition: all 0.3s ease-in;
@@ -124,6 +169,10 @@ body {
     width: 270px;
   }
 
+  .nav.scrolled .nav-elements {
+    background-color: #0029cf; /* Dark background on scroll */
+  }
+  
   .nav-elements ul {
     display: flex;
     flex-direction: column;
