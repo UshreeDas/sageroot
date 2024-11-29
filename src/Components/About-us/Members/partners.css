@@ -1,22 +1,17 @@
-.partners-container{
+.partners-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 3rem;
-    margin-top: 3rem;
-    margin-bottom: 5rem;
+    margin: 3rem 0 5rem;
 }
 
-
 .partners-data {
-    /* width: 85%; */
-    width: 45%;
-    /* margin: 0 auto; */
-  }
-  
-  /* Styling for each testimonial card */
-  .partners-card {
+    width: 45%; /* Default width */
+}
+
+.partners-card {
     background-color: #ffffff; /* White background */
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     border-radius: 10px; /* Rounded corners */
@@ -24,55 +19,52 @@
     text-align: center;
     transition: transform 0.6s ease, box-shadow 0.6s ease;
     padding: 20px;
-    max-width: 700px; /* Set a fixed width if needed */
-    /* margin: 20px; */
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    max-width: 700px; /* Optional: Set a fixed width */
+    margin: 2rem 0; /* Top & Bottom Margin */
     border: 0.1px solid #ebeaea;
+    display: flex;
+    flex-direction: column; /* Ensure content stacks vertically */
+    align-items: center; /* Center-align the content */
+    justify-content: center; /* Center-align the content */
 }
 
-/* Hover effect for subtle scaling and shadow */
+/* Hover effect for scaling and shadow */
 .partners-card:hover {
     transform: scale(1.03);
-    box-shadow: 0 4px  10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .partners-line {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.partners-information{
+.partners-information {
     display: flex;
     flex-direction: row;
     gap: 1.5rem;
     align-items: center;
     justify-content: center;
-
 }
 
 .partners-address {
-display: flex;
-flex-direction: column;
-margin-top: 20px;
-font-size: 1rem;
-
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 1rem;
 }
 
 .partners-img {
-
     padding-bottom: 15px;
-
 }
 
 /* Style the image */
 .partners-img img {
     width: 300px; /* Control image size */
     height: 300px;
-    object-fit: cover;
+    object-fit: cover; /* Prevent distortion */
 }
 
 /* Partner information styling */
@@ -91,28 +83,40 @@ font-size: 1rem;
 
 .partners-post {
     font-size: 1em;
-    color:#0029CF ;
+    color: #0029CF;
 }
 
+/* Slick slider padding */
 .slick-slider .slick-slide {
     padding: 0 10px;
-  }
+}
 
-  @media (max-width: 1300px) {
+/* Responsive Design */
+@media (max-width: 1300px) {
     .partners-container {
-        display: flex; 
-        flex-direction: column;
+        flex-direction: column; /* Stack items vertically */
         justify-content: center;
         align-items: center;
     }
     .partners-data {
         width: 70%;
         margin: 0 auto;
-        align-items: center;
-        justify-content: center;
-      }
-      .partners-card{
-        margin-top: 0.4rem;
-      }
+    }
+    .partners-card {
+        margin-top: 0.1rem;
+    }
+    .partners-information {
+        flex-direction: column; /* Stack items vertically */
+        gap: 1rem; /* Add spacing between items */
+    }
+    .partners-img img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover; /* Keep image proportions consistent */
+    }
+    .partners-address {
+        font-size: 13px; /* Adjust font size for smaller screens */
+    }
+}
 
-  }
+ 
