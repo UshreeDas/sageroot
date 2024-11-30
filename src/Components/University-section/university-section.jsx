@@ -10,8 +10,8 @@ function UniversitySection() {
         <div className="university-container">
             <div className='about-hero'>
             <div className="abt-text">
-                <h4><strong>Connected University</strong></h4>
-                <p>Home > Connected University</p>
+                <h4><strong>Here Excellence Meets Opportunity</strong></h4>
+                <p>Home >University </p>
                 </div>
             </div>
             <div className="university-section">

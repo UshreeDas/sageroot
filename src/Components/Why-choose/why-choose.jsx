@@ -73,16 +73,20 @@ function Why() {
 
 const choose = [
   {
-    name: "Scholarship up to 50%",
+    name: "Financial assistance",
     image: "./education.svg",
+  },
+  {
+    name: "Program tailor matched for your needs",
+    image: "./Coin.svg",
   },
   {
     name: "Making sure you stay right, and stay well",
     image: "./security warning (1).svg",
   },
   {
-    name: "Courses starting at ₹8 Lakhs*",
-    image: "./Coin.svg",
+    name: "Internship & placement opportunities",
+    image: "./SAGEROOTS INTERNATIONAL (2).svg",
   },
   {
     name: "850+ University Partners",

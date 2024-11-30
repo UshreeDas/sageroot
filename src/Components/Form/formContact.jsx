@@ -81,7 +81,12 @@ const FormContact = () => {
 
     return (
         <div className="contuct-us">
-            <div className='element'><h1>Start Your Journey Today!</h1></div>
+            <div className='about-hero'>
+                <div className="abt-text">
+                    <h4><strong>Start Your Journey Today</strong></h4>
+                    <p>Home > How to Apply</p>
+                </div>
+            </div>
 
             <div className='form-c'>
                 <div className="location">

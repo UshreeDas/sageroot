@@ -1,5 +1,5 @@
-
-.why-choose-us{
+/* Base container styling */
+.why-choose-us {
   margin-top: 4rem;
 }
 
@@ -8,86 +8,71 @@
   text-align: center;
 }
 
+/* Container for the items */
 .why-choose-input {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
+  /* justify-content: space-between; */
+  /* max-width: 1200px; */
+  margin: 0 auto; /* Center the container */
 }
 
 /* Individual item styling */
 .why-choose-content {
-  padding: 20px;
-  width: 250px;
-  margin: 15px;
-  transition: transform 0.6s ease, box-shadow 0.6s ease;
-  cursor: pointer;
-}
-
-.why-choose-content {
+  padding: 10px;
+  width: 300px;
+  /* margin: 15px; */
   opacity: 0; /* Initially hidden */
-  transform: translateY(20px); /* Slightly lower */
-  transition: transform 0.6s ease, box-shadow 0.6s ease;
+  transform: translateY(20px); /* Start slightly below */
+  transition: transform 0.6s ease, box-shadow 0.6s ease, opacity 0.6s ease;
   cursor: pointer;
 }
 
-/* Fade-in animation when the element comes into view */
+/* Animation when element comes into view */
 .scroll-in {
   opacity: 1;
-  transform: translateY(0); /* Slide up to original position */
+  transform: translateY(0); /* Slide up into original position */
 }
 
-.why-choose-content:hover {
+
+/* .why-choose-content:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-}
+} */
 
-
-
-
+/* Image container */
 .why-choose-img {
   margin-bottom: 8px;
 }
 
 .choose-img {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   object-fit: contain;
+  transform: translateY(20px); /* Start slightly below */
+  transition: transform 0.6s ease, box-shadow 0.6s ease, opacity 0.6s ease;
+  cursor: pointer;
+  margin-bottom: 30px;
 }
 
+.choose-img:hover {
+  transform: scale(1.05);
+  border-radius: 10px;
+}
+
+/* Reason text */
 .why-choose-reason {
   font-size: 1rem;
   font-weight: bold;
   color: #333;
   margin-top: 5px;
+  text-align: center;
 }
 
-/* Responsive for iPhone 14 Pro Max (430px width) */
-@media (max-width: 430px) {
-  .why-choose-input {
-    flex-direction: row; /* Stack items vertically */
-    align-items: center;
-  }
+/* Responsive styling */
 
-  .why-choose-content {
-    width: 100%; /* Make the content take full width */
-    margin: 10px 0; /* Adjust margin to reduce spacing */
-    padding: 15px;
-  }
-
-  .choose-img {
-    width: 60px; /* Scale down the images for smaller screens */
-    height: 60px;
-  }
-
-  .why-choose-reason {
-    font-size: 0.9rem; /* Slightly smaller font size for reasons */
-  }
-}
-
-/* Further scaling for smaller screens */
+/* For tablets and smaller devices */
 @media (max-width: 768px) {
   .why-choose-input {
     flex-direction: column;
@@ -95,7 +80,30 @@
   }
 
   .why-choose-content {
-    width: 80%;
+    width: 80%; /* Adjust width for smaller screens */
+    margin: 10px 0; /* Reduce spacing */
+  }
+}
 
+/* For mobile devices (e.g., iPhone 14 Pro Max, 430px width) */
+@media (max-width: 430px) {
+  .why-choose-input {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .why-choose-content {
+    width: 90%; /* Take most of the screen width */
+    margin: 10px 0;
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .choose-img {
+    width: 60px; /* Scale down the images */
+    height: 60px;
+  }
+
+  .why-choose-reason {
+    font-size: 0.9rem; /* Slightly smaller font size */
   }
 }

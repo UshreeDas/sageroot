@@ -10,7 +10,7 @@ function About() {
         <div className="about-container">
             <div className='about-hero'>
                 <div className="abt-text">
-                <h4><strong>About Partners</strong></h4>
+                <h4><strong>Stronger Together, Growing Globally</strong></h4>
                 <p>Home > About Partners</p>
                 </div>
             </div>
