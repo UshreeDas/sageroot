@@ -8,8 +8,8 @@ function HowToApply() {
         <div className="apply-container">
             <div className='about-hero'>
                 <div className="abt-text">
-                    <h4><strong>How to Apply</strong></h4>
-                    <p>Home > How to Apply</p>
+                    <h4><strong>Believe in Us, Because We Believe in You</strong></h4>
+                    <p>Home > About us</p>
                 </div>
             </div>
             <div className="apply-body">
@@ -18,19 +18,23 @@ function HowToApply() {
                 </div>
 
                 <div className="about-content-right">
-                    <Ourmissiontext title={"How to Apply"} />
-                    <p className="mission-para">Our mission is to provide the best education for our students. We
+                    <Ourmissiontext title={"About Us"} />
+                    <p className="mission-para">
+                        {/* Our mission is to provide the best education for our students. We
                         believe that education is the key to a successful future. We are
                         committed to providing the best education possible to our students.
                         We believe that education is the key to a successful future. We are
                         committed to providing the best education possible to our students.
                         We believe that education is the key to a successful future. We are
-                        committed to providing the best education possible to our students.
-                    </p>
-                </div>
-
+                        committed to providing the best education possible to our students. */}
+                    We at Sageroots International is involved in producing consultancy services to
+                    students who intend to study abroad and developing educational products. We offer end-to-end service for
+                    aspiring candidates.
+                </p>
             </div>
-            <div className="apply-conclusion">
+
+        </div>
+            {/* <div className="apply-conclusion">
                 <p className="our-partners-text">Documents Required for submission</p>
                 <ul className="apply-conclusion-ul-point">
                     <li>Passport</li>
@@ -54,8 +58,8 @@ function HowToApply() {
                     <li>Other Qualification</li>
                 </ul>
                 <div className="apply-conclusion-last-text">Mail the documents at <strong>info.sageroots@gmail.com</strong></div>
-            </div>
-        </div>
+            </div> */}
+        </div >
     );
 }
 

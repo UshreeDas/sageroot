@@ -62,7 +62,7 @@ function Testimonial() {
       className={`heading-text ${isVisible ? "visible" : ""}`} 
       ref={headingRef}
     >
-      Here From Our <span className="catchy-text">Happy Students</span>
+      Hear From Our <span className="catchy-text">Happy Students</span>
     </h1>
             <div  className={`testimonial-feedback ${isVisible ? "visible" : ""}`} 
       ref={headingRef}>

@@ -5,7 +5,7 @@ import Footer from "./Components/Footer/footer";
 import UniversitySection from "./Components/University-section/university-section";
 import FormContact from "./Components/Form/formContact";
 import About from "./Components/About-us/about-us";
-import Loading from "./Components/Loading/loading";
+import Loading from "./Components/Loading/loading"; 
 import HowToApply from "./Components/how-to-apply/how-to-apply";
 
 // import NavBar from "./Components/Navbar/NavBar";
@@ -37,6 +37,7 @@ function App() {
                         <Route path="/contact" element={<FormContact />} />
                         <Route path="/about" element={<About />} />
                         <Route path="/apply" element={<HowToApply />} />
+                       
                     </Routes>
                     <Footer />
                       
