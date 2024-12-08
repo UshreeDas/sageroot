@@ -174,7 +174,7 @@ const FormContact = () => {
                                             onChange={handleChange}
                                             required
                                         >
-                                            <option value="">Select Program</option>
+                                            <option value="">Select program</option>
                                             {subjects.map((subject) => (
                                                 <option key={subject} value={subject}>
                                                     {subject}
@@ -209,7 +209,7 @@ const FormContact = () => {
                                             onChange={handleChange}
                                             required
                                         >
-                                            <option value="">Select</option>
+                                            <option value="">IELTS/TOEFL qualified</option>
                                             <option value="yes">Yes</option>
                                             <option value="no">No</option>
                                         </select>

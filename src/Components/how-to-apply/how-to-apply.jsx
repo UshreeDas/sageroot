@@ -27,13 +27,14 @@ function HowToApply() {
                         committed to providing the best education possible to our students.
                         We believe that education is the key to a successful future. We are
                         committed to providing the best education possible to our students. */}
-                    We at Sageroots International is involved in producing consultancy services to
-                    students who intend to study abroad and developing educational products. We offer end-to-end service for
-                    aspiring candidates.
-                </p>
-            </div>
+                        We at Sageroots International is involved in producing consultancy services to
+                        students who intend to study abroad and developing educational products. We offer end-to-end service for
+                        aspiring candidates.Our team including our partners abroad are committed to be an integral part of your
+                        success : Shaping your professional dreams to reality.
+                    </p>
+                </div>
 
-        </div>
+            </div>
             {/* <div className="apply-conclusion">
                 <p className="our-partners-text">Documents Required for submission</p>
                 <ul className="apply-conclusion-ul-point">
@@ -59,6 +60,18 @@ function HowToApply() {
                 </ul>
                 <div className="apply-conclusion-last-text">Mail the documents at <strong>info.sageroots@gmail.com</strong></div>
             </div> */}
+            <div className="serviceContent">
+                <div className="ourServices">
+                    <Ourmissiontext title={"Our Services"} />
+                </div>
+                <div className="services">
+                    <li>Portfolio Mnagement</li>
+                    <li>Financial Planning</li>
+                    <li>Visa Assistance</li>
+                    <li>Post Admission Guidance</li>
+                    <li>Internship & Placement Assistance</li>
+                </div>
+            </div>
         </div >
     );
 }
