@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
-import './nav.css';
+import { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
+import "./nav.css";
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -15,15 +15,19 @@ const Navbar = () => {
       const scrollThreshold = window.innerHeight * 0.3; // 30% of the viewport height
       setScrolled(window.scrollY > scrollThreshold);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <nav className="nav">
       <div className="container">
         <div className="logo">
-          <img src="./SAGEROOTS INTERNATIONAL(Blue).svg" className='nav-brand' alt="logo" />
+          <img
+            src="./SAGEROOTS INTERNATIONAL(Blue).svg"
+            className="nav-brand"
+            alt="logo"
+          />
         </div>
         <div className="menu-icon" onClick={handleShowNavbar}>
           <div className="burger" id="burger">
@@ -32,12 +36,12 @@ const Navbar = () => {
             <span className="burger-line"></span>
           </div>
         </div>
-        <div className={`nav-elements ${showNavbar && 'active'}`}>
+        <div className={`nav-elements ${showNavbar && "active"}`}>
           <ul>
             <li>
               <NavLink to="/">Home</NavLink>
             </li>
-            
+
             <li>
               <NavLink to="/university">University Partners</NavLink>
             </li>
@@ -45,7 +49,7 @@ const Navbar = () => {
               <NavLink to="/about">About Partners</NavLink>
             </li>
             <li>
-              <NavLink to="/apply">Abou us</NavLink>
+              <NavLink to="/apply">About us</NavLink>
             </li>
             <li>
               <NavLink to="/contact">How to Apply</NavLink>
