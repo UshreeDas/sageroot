@@ -2,6 +2,7 @@ import React from "react";
 import "./MainPage.css";
 import Why from "../Why-choose/why-choose";
 import Testimonial from "../Testimonials/testimonial";
+import Award from "../Award/award";
 
 function Main() {
 
@@ -17,6 +18,7 @@ function Main() {
             </div>
             <Why/>
             <Testimonial/>
+            <Award/>
         </div>
     );
 }
