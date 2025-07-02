@@ -65,11 +65,11 @@ function HowToApply() {
                     <Ourmissiontext title={"Our Services"} />
                 </div>
                 <div className="services">
-                    <li>Portfolio Mnagement</li>
-                    <li>Financial Planning</li>
-                    <li>Visa Assistance</li>
-                    <li>Post Admission Guidance</li>
-                    <li>Internship & Placement Assistance</li>
+                    <li>1. Portfolio Mnagement</li>
+                    <li>2. Financial Planning</li>
+                    <li>3. Visa Assistance</li>
+                    <li>4. Post Admission Guidance</li>
+                    <li>5. Internship & Placement Assistance</li>
                 </div>
             </div>
         </div >

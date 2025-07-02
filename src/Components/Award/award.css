@@ -1,0 +1,62 @@
+.award-portion {
+    margin-top: 2rem;
+    margin-bottom: 4rem; 
+  }
+  
+  .award-container {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 1300px;  /* Sets a maximum width */
+    width: 100%;  /* Ensures responsiveness */
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: rgb(255, 248, 248);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    gap: 1rem;
+    margin-left: auto;
+    margin-right: auto;  /* Centers the container */
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+
+  
+  .award-caption {
+    font-size: 1rem;
+    color: #555;
+    font-family: "Merriweather", serif;
+   padding-left: 3rem;
+   padding-right: 2rem;
+  }
+  
+  /* .certificate-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  
+  .award-img {
+   width: 20rem;
+    height: 30rem;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  .certificate-img{
+    padding-right: 3rem;
+  }
+  .award-heading{
+    font-family: "Merriweather", serif;
+    font-size: 3rem;
+    color: #0029CF;
+  padding-left: 3rem;}
+   .award-subheading{
+    font-family: "Merriweather", serif;
+    font-size: 2rem;
+    color: rgb(58, 58, 58);
+  padding-left: 3rem;
+  margin-top: -2rem;
+   }
